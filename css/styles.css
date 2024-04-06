@@ -116,8 +116,16 @@
   align-items: flex-end;
 }
 
+.myImgContainer {
+  border: rgb(0, 160, 160) 2px solid;
+  height: 50%;
+  width: 75%;
+}
+
 .myImg {
-  border: aqua 2px solid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .projectNav {
@@ -129,6 +137,18 @@
 }
 .nav-item2:hover {
   background-color: red;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+.projectImageContainer {
+  width: 75%;
+  height: 25%;
 }
 
 .blogLink {
@@ -197,6 +217,71 @@
   transform: scale(1.2); /* Hacer que el ícono se agrande al 120% cuando el cursor esté sobre él */
 }
 
+@media screen and (min-width: 767px) {
+  .divContainer {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+  }
+  .divAbout {
+    width: 40%;
+  }
+  .myImgContainer {
+    width: 50%;
+  }
+  .subMenuProjectNav {
+    font-size: 1.3rem;
+  }
+  .projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+  }
+  .projectImageContainer {
+    width: 45%;
+    height: 25%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .thirdTitles {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .divContainer {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+  }
+  .divAbout {
+    width: 40%;
+  }
+  .myImgContainer {
+    width: 50%;
+  }
+  .subMenuProjectNav {
+    font-size: 1.3rem;
+  }
+  .projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+  }
+  .projectImageContainer {
+    width: 45%;
+    height: 25%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .primaryTitle {
+    font-size: 3.5rem;
+  }
+  .secondaryTitles {
+    font-size: 5rem;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -225,6 +310,14 @@ html {
   justify-content: center;
   color: black;
   text-align: center;
+}
+
+.secondaryTitles {
+  font-size: 1.5rem;
+}
+
+.thirdTitles {
+  font-size: 1.3rem;
 }
 
 .border1 {

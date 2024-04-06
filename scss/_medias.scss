@@ -1,0 +1,82 @@
+
+
+
+//Tablets STARTS
+
+@media screen and (min-width: 767px) { //Specific
+    .divContainer {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-evenly;
+    }
+    .divAbout {
+      width: 40%;
+    }
+    .myImgContainer {
+      width: 50%;
+    }
+    .subMenuProjectNav {
+      font-size: 1.3rem;
+    }
+    .projectContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap row;
+    }
+    .projectImageContainer {
+      width: 45%;
+      height: 25%;
+    }
+  }
+
+  @media screen and (min-width: 767px) { //General
+    .thirdTitles {
+      font-size: 1.5rem;
+    }
+  }
+
+  //Tablets ENDS
+
+
+  //Laptops STARTS
+
+
+  @media screen and (min-width: 1023px) { //Specific
+    .divContainer {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+      }
+      .divAbout {
+        width: 40%;
+      }
+      .myImgContainer {
+        width: 50%;
+      }
+      .subMenuProjectNav {
+        font-size: 1.3rem;
+      }
+      .projectContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap row;
+      }
+      .projectImageContainer {
+        width: 45%;
+        height: 25%;
+      }
+  }
+
+
+  @media screen and (min-width: 1023px) {   //General
+    .primaryTitle{
+        font-size: 3.5rem;
+    }
+    .secondaryTitles{
+        font-size: 5rem;
+    }
+  }
+
+  //Laptop ENDS
