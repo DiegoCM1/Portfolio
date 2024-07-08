@@ -3,7 +3,7 @@
 
 //Tablets STARTS
 
-@media screen and (min-width: 767px) { //Specific
+@media screen and (min-width: 767px) {
     .divContainer {
       display: flex;
       flex-flow: wrap row;
@@ -30,7 +30,7 @@
     }
   }
 
-  @media screen and (min-width: 767px) { //General
+  @media screen and (min-width: 767px) {
     .thirdTitles {
       font-size: 1.5rem;
     }
@@ -42,17 +42,28 @@
   //Laptops STARTS
 
 
-  @media screen and (min-width: 1023px) { //Specific
+  @media screen and (min-width: 992px) {
     .divContainer {
         display: flex;
         flex-flow: wrap row;
         justify-content: space-evenly;
       }
       .divAbout {
+        width: 22%;
+      }
+      .divMyImageAndTechnologies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .divMyImg{
         width: 40%;
       }
-      .myImgContainer {
-        width: 50%;
+      .technologies{
+        width: 40%;
+      }
+      .technologyItem{
+        margin-top: 0;
       }
       .subMenuProjectNav {
         font-size: 1.3rem;
@@ -70,7 +81,7 @@
   }
 
 
-  @media screen and (min-width: 1023px) {   //General
+  @media screen and (min-width: 992px) {
     .primaryTitle{
         font-size: 3.5rem;
     }
