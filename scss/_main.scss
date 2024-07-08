@@ -4,6 +4,15 @@
   color: white;
 }
 
+.nav-link:hover{
+  color: red;
+}
+
+.nav-link.selected {
+  color: #ff6600;
+}
+
+
 .mainMenu {
   position: sticky;
   z-index: 9000;
@@ -125,6 +134,9 @@
   transition: background-color 0.4s ease;
   &:hover {
     background-color: red;
+    .nav-link{
+      color: white;
+    }
   }
 }
 
@@ -148,6 +160,8 @@
 //BLOG STARTS
 .blogLink {
   transition: 0.3s;
+  width: 75vw;
+  height: 75vh;
   &:hover {
     background-color: rgb(233, 233, 233);
     color: black;

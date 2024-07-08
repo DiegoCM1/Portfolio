@@ -90,4 +90,28 @@
     }
   }
 
+
+  @media screen and (min-width: 1200px) {
+  .blogLink{
+    width: 65vw;
+    height: 70vh;
+    &:hover{
+      width: 68vw;
+    }
+  }
+  .blogTextContainer{
+    height: 30%;
+  }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .blogLink{
+      width: 60vw;
+      height: 65vh;
+      &:hover{
+        width: 63vw;
+      }
+    }
+    }
+
   //Laptop ENDS
