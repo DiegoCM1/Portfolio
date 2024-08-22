@@ -344,6 +344,11 @@ html {
   background-color: black;
 }
 
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-style: normal;
+}
+
 .secondBg {
   background-color: white;
 }
