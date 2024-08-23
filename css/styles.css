@@ -239,7 +239,7 @@
   transform: scale(1.2); /* Hacer que el ícono se agrande al 120% cuando el cursor esté sobre él */
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .divContainer {
     display: flex;
     flex-flow: wrap row;
@@ -264,10 +264,14 @@
     width: 45%;
     height: 25%;
   }
-}
-@media screen and (min-width: 767px) {
+  .secondaryTitles {
+    font-size: 2.2rem;
+  }
+  .viewMyWorkText {
+    font-size: 1rem;
+  }
   .thirdTitles {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -306,13 +310,17 @@
     width: 45%;
     height: 25%;
   }
-}
-@media screen and (min-width: 992px) {
   .primaryTitle {
     font-size: 3.5rem;
   }
   .secondaryTitles {
-    font-size: 5rem;
+    font-size: 2.4rem;
+  }
+  .viewMyWorkText {
+    font-size: 1rem;
+  }
+  .thirdTitles {
+    font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -326,6 +334,18 @@
   .blogTextContainer {
     height: 30%;
   }
+  .primaryTitle {
+    font-size: 3.7rem;
+  }
+  .secondaryTitles {
+    font-size: 2.6rem;
+  }
+  .viewMyWorkText {
+    font-size: 1.9rem;
+  }
+  .thirdTitles {
+    font-size: 2.1rem;
+  }
 }
 @media screen and (min-width: 1400px) {
   .blogLink {
@@ -335,9 +355,22 @@
   .blogLink:hover {
     width: 63vw;
   }
+  .primaryTitle {
+    font-size: 4rem;
+  }
+  .secondaryTitles {
+    font-size: 3rem;
+  }
+  .viewMyWorkText {
+    font-size: 2.1rem;
+  }
+  .thirdTitles {
+    font-size: 2.3rem;
+  }
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 .bg {
