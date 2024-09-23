@@ -63,9 +63,9 @@
 }
 
 .myImg {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Ensures the image resizes with the container */
+  height: 100%; /* Keeps the aspect ratio */
+  object-fit: cover; /* Fills the container while maintaining the aspect ratio */
 }
 
 .technologies {

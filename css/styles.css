@@ -86,9 +86,9 @@
 }
 
 .myImg {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Ensures the image resizes with the container */
+  height: 100%; /* Keeps the aspect ratio */
+  object-fit: cover; /* Fills the container while maintaining the aspect ratio */
 }
 
 .technologies {
@@ -238,7 +238,7 @@
   transform: scale(1.2); /* Hacer que el ícono se agrande al 120% cuando el cursor esté sobre él */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
   .divContainer {
     display: flex;
     flex-flow: wrap row;
@@ -248,7 +248,7 @@
     width: 40%;
   }
   .myImgContainer {
-    width: 50%;
+    width: 40%;
   }
   .subMenuProjectNav {
     font-size: 1.3rem;
@@ -273,7 +273,7 @@
     font-size: 1.7rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (min-width: 1199px) {
   .divContainer {
     display: flex;
     flex-flow: wrap row;
@@ -289,6 +289,9 @@
   }
   .divMyImg {
     width: 40%;
+  }
+  .myImgContainer {
+    width: 30%;
   }
   .technologies {
     width: 40%;
