@@ -1,0 +1,48 @@
+//INDEX STARTS
+
+.a{
+    text-decoration: none;
+}
+.presentationName{
+    color: red;
+}
+.viewMyWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 50%;
+    border: solid 3px white;
+    transition: background-color 0.3s ease;
+    &:hover {
+        border: solid 3px red;
+        background-color: red;
+    }
+}
+
+.viewMyWorkText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+//INDEX ENDS
+
+
+
+//ABOUT STARTS
+
+
+
+//ABOUT ENDS
+
+
+//PORTFOLIO STARTS
+
+
+
+
+
+
+//PORTFOLIO ENDS
