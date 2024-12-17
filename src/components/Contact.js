@@ -8,7 +8,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="p-10  bg-white text-gray-900 px-28">
+    <section id="contact" className="p-10 h-screen text-gray-900 px-28 flex flex-col justify-center">
       <div className="flex w-full">
         <div className="text-center flex flex-col items-center justify-center mb-10 w-full">
           <h2 className="text-3xl font-bold mb-4">Get in Touch.</h2>

@@ -1,6 +1,15 @@
-import React from 'react';
-import { FaReact, FaHtml5, FaCss3, FaJs, FaGit, FaGithub } from 'react-icons/fa';
-import { FaFigma } from 'react-icons/fa6';
+import React from "react";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaGit,
+  FaGithub,
+  FaWind,
+} from "react-icons/fa";
+import { FaFigma } from "react-icons/fa6";
+import { SiTailwindcss, SiReact } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -22,6 +31,18 @@ const TechStack = () => {
         <div className="flex flex-col items-center m-2">
           <FaReact className="text-blue-600" />
           <p className="text-sm mt-2">React</p>
+        </div>
+        <div className="flex flex-col items-center m-2">
+          <SiTailwindcss className="text-teal-500" />
+          <p className="text-sm mt-2">Tailwind CSS</p>
+        </div>
+        <div className="flex flex-col items-center m-2">
+          <SiReact className="text-blue-500" />
+          <p className="text-sm mt-2">React Native</p>
+        </div>
+        <div className="flex flex-col items-center m-2">
+          <SiTailwindcss className="text-purple-500" />
+          <p className="text-sm mt-2">NativeWind</p>
         </div>
         <div className="flex flex-col items-center m-2">
           <FaGit className="text-red-600" />
