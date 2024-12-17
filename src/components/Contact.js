@@ -9,7 +9,7 @@ import {
 const Contact = () => {
   return (
     <section className="p-10  bg-white text-gray-900 px-28">
-      <div className="flex ">
+      <div className="flex w-full">
         <div className="text-center flex flex-col items-center justify-center mb-10 w-full">
           <h2 className="text-3xl font-bold mb-4">Get in Touch.</h2>
           <p className="text-lg">

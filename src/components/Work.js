@@ -1,52 +1,60 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs, FaGit, FaGithub } from 'react-icons/fa'; // Importing necessary icons
+import pcLearnitImage from '../assets/pcLearnit.png';
+import pcMokeponImage from '../assets/pcMokepon.png';
+import pcBlueEyeImage from '../assets/pcLearnit.png';
+import pcEcommerceImage from '../assets/pcEcommerce.png';
+import pcMedAIImage from '../assets/pcLearnit.png';
+import pcTodoImage from '../assets/pcLearnit.png';
+
+
 
 // Array of project details
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'LearnIt',
+    description: 'App that gives you the most powerful learning techniques, all in one',
+    imageUrl: pcLearnitImage,
     technologies: [<FaReact className="text-blue-600" />, <FaNodeJs className="text-green-600" />],
-    codeLink: 'https://github.com/yourgithub/project1',
-    demoLink: 'https://project1.demo.com',
+    codeLink: 'https://github.com/DiegoCM1/LearnIt',
+    demoLink: 'https://diegocm1.github.io/LearnIt/',
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'Mokepon',
+    description: 'This is an online multiplayer videogame',
+    imageUrl: pcMokeponImage,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
-    codeLink: 'https://github.com/yourgithub/project2',
-    demoLink: 'https://project2.demo.com',
+    codeLink: 'https://github.com/DiegoCM1/Mokepon',
+    demoLink: 'https://diegocm1.github.io/Mokepon/',
   },
   {
-    title: 'Project 3',
-    description: 'Description of project 3',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'Ecommerce',
+    description: 'Ecommerce to sell cars',
+    imageUrl: pcEcommerceImage,
     technologies: [<FaReact className="text-blue-600" />, <FaHtml5 className="text-orange-600" />],
-    codeLink: 'https://github.com/yourgithub/project3',
-    demoLink: 'https://project3.demo.com',
+    codeLink: 'https://github.com/DiegoCM1/Ecommerce',
+    demoLink: 'https://diegocm1.github.io/Ecommerce/',
   },
   {
-    title: 'Project 4',
-    description: 'Description of project 4',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'MedAI',
+    description: 'App that uses AI to give precise diagnostics and prevent future diseases based on the given information',
+    imageUrl: pcMedAIImage,
     technologies: [<FaGit className="text-red-600" />, <FaGithub className="text-black" />],
-    codeLink: 'https://github.com/yourgithub/project4',
-    demoLink: 'https://project4.demo.com',
+    codeLink: '',
+    demoLink: '',
   },
   {
-    title: 'Project 5',
-    description: 'Description of project 5',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'BluEye',
+    description: 'App powered by AI focused on giving early alerts and life saving recommendations when a hurricane is near you. Uses Llama 3.2',
+    imageUrl: pcBlueEyeImage,
     technologies: [<FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
-    codeLink: 'https://github.com/yourgithub/project5',
+    codeLink: 'hhttps://github.com/Victor4286/MetaQuetzal',
     demoLink: 'https://project5.demo.com',
   },
   {
-    title: 'Project 6',
-    description: 'Description of project 6',
-    imageUrl: 'https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg',
+    title: 'To-do App',
+    description: 'To-do app that will help you getting things done',
+    imageUrl: pcTodoImage,
     technologies: [<FaReact className="text-blue-600" />, <FaNodeJs className="text-green-600" />, <FaGithub className="text-black" />],
     codeLink: 'https://github.com/yourgithub/project6',
     demoLink: 'https://project6.demo.com',
@@ -57,7 +65,7 @@ const projects = [
 const Work = () => {
   return (
     <section id="work" className="pr-28 pl-28 py-10 bg-gray-100 text-gray-900">
-      <h2 className="text-3xl font-bold mb-4 text-center">My Work.</h2>
+      <h2 className="text-3xl font-bold mb-4">My Work.</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg p-6">

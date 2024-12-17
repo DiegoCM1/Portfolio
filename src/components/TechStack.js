@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaReact, FaHtml5, FaCss3, FaJs, FaGit, FaGithub } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa6';
 
 const TechStack = () => {
   return (
     <section className="pt-2 bg-white text-gray-900">
-      <h2 className="text-3xl font-bold mb-4">Tech Stack:</h2>
+      <h3 className="text-2xl font-bold mb-4">Tech Stack:</h3>
       <div className="flex flex-wrap space-x-5 text-4xl">
         <div className="flex flex-col items-center m-2">
           <FaHtml5 className="text-orange-600" />
@@ -29,6 +30,10 @@ const TechStack = () => {
         <div className="flex flex-col items-center m-2">
           <FaGithub className="text-black" />
           <p className="text-sm mt-2">GitHub</p>
+        </div>
+        <div className="flex flex-col items-center m-2">
+          <FaFigma className="text-black" />
+          <p className="text-sm mt-2">Figma</p>
         </div>
       </div>
     </section>

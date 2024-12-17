@@ -12,11 +12,13 @@ const Header = () => {
 
         <div className="mt-4">
           <a
-            href="path/to/resume.pdf"
+            href="/CV_Fronted Developer_Diego Colin.pdf"
+            target="_blank"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-2"
           >
             Resume
           </a>
+
           <a
             href="#work"
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
