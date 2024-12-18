@@ -6,7 +6,6 @@ import {
   FaJs,
   FaGit,
   FaGithub,
-  FaWind,
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import { SiTailwindcss, SiReact } from "react-icons/si";
