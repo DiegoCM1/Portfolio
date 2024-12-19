@@ -14,7 +14,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 } // 50% of the section must be visible to trigger
+      { threshold: 0.6 } // 50% of the section must be visible to trigger
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -25,20 +25,27 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
+    <nav className="bg-primaryDarkBlue text-highlightBlue sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 pl-28 pr-28">
+        {/* Hamburger Menu for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden block text-white focus:outline-none"
+          className="lg:hidden block text-highlightBlue focus:outline-none"
         >
           ☰
         </button>
-        <ul className={`lg:flex lg:space-x-4 ${isOpen ? "block" : "hidden"}`}>
+
+        {/* Navbar Links */}
+        <ul
+          className={`lg:flex lg:space-x-6 ${
+            isOpen ? "block" : "hidden"
+          } text-buttonBlue`}
+        >
           <li>
             <a
               href="#home"
-              className={`hover:underline ${
-                activeSection === "home" ? "text-blue-400" : ""
+              className={`hover:text-textWhite ${
+                activeSection === "home" ? "text-textWhite font-bold" : ""
               }`}
             >
               Home
@@ -47,8 +54,8 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className={`hover:underline ${
-                activeSection === "about" ? "text-blue-400" : ""
+              className={`hover:text-textWhite ${
+                activeSection === "about" ? "text-textWhite font-bold" : ""
               }`}
             >
               About
@@ -57,8 +64,8 @@ const Navbar = () => {
           <li>
             <a
               href="#work"
-              className={`hover:underline ${
-                activeSection === "work" ? "text-blue-400" : ""
+              className={`hover:text-textWhite ${
+                activeSection === "work" ? "text-textWhite font-bold" : ""
               }`}
             >
               Projects
@@ -67,8 +74,8 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className={`hover:underline ${
-                activeSection === "contact" ? "text-blue-400" : ""
+              className={`hover:text-textWhite ${
+                activeSection === "contact" ? "text-textWhite font-bold" : ""
               }`}
             >
               Contact

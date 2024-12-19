@@ -2,16 +2,20 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="pt-2 text-gray-900">
-      <h3 className="text-2xl font-bold mb-4">Education:</h3>
-      <ul className="text-lg flex flex-col">
-        {" "}
-        <li className="my-2 w-auto">
+    <div className="text-textWhite">
+      {/* Section Title */}
+      <h3 className="text-3xl font-bold mb-4 pb-2">
+        Education:
+      </h3>
+
+      {/* Education List */}
+      <ul className="text-lg text-textWhite space-y-4">
+        <li>
           ● Platzi
-        </li>{" "}  
-        <li className="my-2 w-auto">
+        </li>
+        <li>
           ● Coderhouse
-        </li>{" "}
+        </li>
       </ul>
     </div>
   );
