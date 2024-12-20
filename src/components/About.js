@@ -4,18 +4,22 @@ import TechStack from "./TechStack";
 
 const About = () => {
   return (
-    <section id="about" className="pl-28 py-10 pr-28 bg-secondaryDarkBlue text-primaryDarkBlue">
+    <section
+      id="about"
+      className="pl-28 py-10 pr-28 bg-secondaryDarkBlue text-primaryDarkBlue"
+    >
       {/* Title Section */}
       <div className="mb-6">
         <h2 className="text-4xl font-bold mb-4 border-b-4 text-textWhite border-textWhite pb-2">
           About Me.
         </h2>
         <p className="text-lg text-textWhite leading-relaxed">
-          With all these components, your App.js will tie everything together.
-          Make sure to replace placeholders like path/to/your/photo.jpg and
-          path/to/resume.pdf with actual paths. You now have a basic structure
-          for your portfolio! This setup ensures your portfolio is
-          well-organized and easy to maintain. Feel free to expand and explore.
+          I’m a Front-End Web Developer, leveraging my experience working on
+          digital projects with diverse, international teams. I'm fluent in
+          English and enjoy socializing with people from different backgrounds.
+          I am organized, responsible, social, highly competitive, and
+          results-driven, with the ability to learn quickly and lead efforts in
+          the companies/projects I’ve worked on.
         </p>
       </div>
 

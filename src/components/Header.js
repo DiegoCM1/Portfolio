@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
+import myPhoto from "../assets/Me3.jpg"
 
 const Header = () => {
   return (
@@ -43,9 +44,9 @@ const Header = () => {
       {/* Right Section */}
       <div className="w-1/2 h-full flex items-center justify-center">
         <img
-          src="https://ii.ct-stc.com/2/logos/candidates/2024/11/03/1920488503699thumbnail.jpeg"
+          src={myPhoto}
           alt="Diego"
-          className="rounded-full h-2/3 w-2/3 mb-4 border-4 border-buttonBlue"
+          className="rounded-3xl h-2/3 w-3/6 mb-4 border-4 border-buttonBlue object-cover bg-black"
         />
       </div>
     </header>
