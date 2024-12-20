@@ -47,7 +47,7 @@ const Contact = () => {
     >
       <div className="flex w-full">
         <div className="text-center flex flex-col items-center justify-center mb-10 w-full">
-          <h2 className="text-4xl font-bold mb-4 text-textWhite">Get in Touch.</h2>
+          <h2 className="text-4xl font-bold mb-4 text-textWhite">Get in Touch<span className="text-buttonBlue">.</span></h2>
           <p className="text-lg">
             I would love to hear from you! Please fill out the form below to
             reach out.

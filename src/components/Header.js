@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
-import myPhoto from "../assets/Me3.jpg"
+import myPhoto from "../assets/Me3.jpg";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
             Frontend Developer
           </h1>
           <p className="mt-2 text-2xl text-textWhite">
-            That loves creating web apps
+            Passionate about technology and progress.
           </p>
         </div>
 
@@ -34,6 +34,13 @@ const Header = () => {
           {/* Portfolio Button */}
           <a
             href="#work"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent the default jump behavior
+              const section = document.querySelector("#work");
+              const offset = 60; // Adjust for your navbar height
+              const position = section.offsetTop - offset; // Calculate position with offset
+              window.scrollTo({ top: position, behavior: "smooth" }); // Smooth scroll
+            }}
             className="flex items-center bg-buttonBlue text-primaryDarkBlue hover:text-buttonBlue font-bold py-2 px-4 rounded-full mr-2 hover:bg-secondaryDarkBlue transition-colors duration-200"
           >
             <FaFolderOpen className="mr-2" /> Portfolio

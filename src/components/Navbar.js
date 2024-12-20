@@ -38,22 +38,28 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primaryDarkBlue text-highlightBlue sticky top-0 z-50 shadow-md">
+    <nav className="bg-secondaryDarkBlue bg-opacity-90 backdrop-blur-md text-highlightBlue sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 pl-28 pr-28">
         {/* Logo on the left */}
         <div className="text-textWhite text-2xl font-bold hover:text-buttonBlue">
-          <a href="#home" onClick={(e) => handleScroll(e, "home")}>Diego.</a>
+          <a href="#home" onClick={(e) => handleScroll(e, "home")}>
+           Diego<span className="text-buttonBlue">.</span>
+          </a> 
         </div>
 
         {/* Navbar Links on the right */}
         <ul
-          className={`lg:flex lg:space-x-6 ${isOpen ? "block" : "hidden"} text-buttonBlue`}
+          className={`lg:flex lg:space-x-6 ${
+            isOpen ? "block" : "hidden"
+          } text-buttonBlue`}
         >
           <li>
             <a
               href="#home"
               onClick={(e) => handleScroll(e, "home")}
-              className={`hover:text-textWhite ${activeSection === "home" ? "text-textWhite font-bold" : ""}`}
+              className={`hover:text-textWhite ${
+                activeSection === "home" ? "text-textWhite font-bold" : ""
+              }`}
             >
               Home
             </a>
@@ -62,7 +68,9 @@ const Navbar = () => {
             <a
               href="#about"
               onClick={(e) => handleScroll(e, "about")}
-              className={`hover:text-textWhite ${activeSection === "about" ? "text-textWhite font-bold" : ""}`}
+              className={`hover:text-textWhite ${
+                activeSection === "about" ? "text-textWhite font-bold" : ""
+              }`}
             >
               About
             </a>
@@ -71,7 +79,9 @@ const Navbar = () => {
             <a
               href="#work"
               onClick={(e) => handleScroll(e, "work")}
-              className={`hover:text-textWhite ${activeSection === "work" ? "text-textWhite font-bold" : ""}`}
+              className={`hover:text-textWhite ${
+                activeSection === "work" ? "text-textWhite font-bold" : ""
+              }`}
             >
               Projects
             </a>
@@ -80,7 +90,9 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={(e) => handleScroll(e, "contact")}
-              className={`hover:text-textWhite ${activeSection === "contact" ? "text-textWhite font-bold" : ""}`}
+              className={`hover:text-textWhite ${
+                activeSection === "contact" ? "text-textWhite font-bold" : ""
+              }`}
             >
               Contact
             </a>

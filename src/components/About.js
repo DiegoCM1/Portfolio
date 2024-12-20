@@ -10,16 +10,15 @@ const About = () => {
     >
       {/* Title Section */}
       <div className="mb-6">
-        <h2 className="text-4xl font-bold mb-4 border-b-4 text-textWhite border-textWhite pb-2">
-          About Me.
+        <h2 className="text-4xl font-bold mb-4  text-textWhite pb-2">
+          About<span className="text-buttonBlue">.</span>
         </h2>
         <p className="text-lg text-textWhite leading-relaxed">
-          I’m a Front-End Web Developer, leveraging my experience working on
-          digital projects with diverse, international teams. I'm fluent in
-          English and enjoy socializing with people from different backgrounds.
-          I am organized, responsible, social, highly competitive, and
-          results-driven, with the ability to learn quickly and lead efforts in
-          the companies/projects I’ve worked on.
+          I'm fluent in english, enjoy practicing contact sports and playing basketball, as well as
+          strategy video games. I'm passionate about personal development and a
+          dedicated reader. I love traveling and attend to tech conferences and
+          hackathons. I’m enthusiastic about contributing to open-source and
+          creating projects from scratch with like-minded people.
         </p>
       </div>
 

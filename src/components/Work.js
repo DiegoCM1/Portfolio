@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs, FaGithub, FaLink } from 'react-icons/fa'; // Importing necessary icons
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs, FaGithub, FaLink, FaPython } from 'react-icons/fa'; // Importing necessary icons
 import { SiTailwindcss } from "react-icons/si";
 import pcLearnitImage from '../assets/pcLearnit.png';
 import phoneLearnitImage from '../assets/phoneLearnit.png';
@@ -51,11 +51,11 @@ const projects = [
     demoLink: 'https://project5.demo.com',
   },
   {
-    title: 'BluEye',
+    title: 'BluEyes',
     description: 'App powered by AI focused on giving early alerts and life saving recommendations when a hurricane is near you. Uses Llama 3.2',
     imageUrl: pcBlueEyeImage,
     imageUrl2: phoneBlueEyeImage,
-    technologies: [<FaReact className="text-blue-600" />, <SiTailwindcss className="text-teal-500" />],
+    technologies: [<FaReact className="text-blue-600" />, <FaPython className="text-blue-600" />, <SiTailwindcss className="text-teal-500" /> ],
     codeLink: 'https://github.com/Victor4286/MetaQuetzal',
     demoLink: 'https://project5.demo.com',
   },
@@ -74,7 +74,7 @@ const projects = [
 const Work = () => {
   return (
 <section id="work" className="pr-28 pl-28 py-10 bg-primaryDarkBlue text-textWhite">
-  <h2 className="text-3xl font-bold mb-4">My Work.</h2>
+  <h2 className="text-3xl font-bold mb-4">My Work<span className="text-buttonBlue">.</span></h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {projects.map((project, index) => (
       <div key={index} className="bg-secondaryDarkBlue shadow-md rounded-lg p-6">
