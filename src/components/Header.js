@@ -6,16 +6,18 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="bg-primaryDarkBlue text-highlightBlue w-screen h-screen flex flex-row px-28"
+      className="bg-primaryDarkBlue dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-screen h-screen flex flex-row px-28"
     >
       {/* Left Section */}
       <div className="w-1/2 h-full flex flex-col justify-center">
         <div>
-          <h2 className="text-4xl mt-2 text-textWhite">Hi, I'm Diego</h2>
-          <h1 className="text-6xl font-bold text-highlightBlue">
+          <h2 className="text-4xl mt-2 text-textWhite dark:text-dark-textPrimary">
+            Hi, I'm Diego
+          </h2>
+          <h1 className="text-6xl font-bold text-highlightBlue dark:text-dark-accent">
             Frontend Developer
           </h1>
-          <p className="mt-2 text-2xl text-textWhite">
+          <p className="mt-2 text-2xl text-textWhite dark:text-dark-textSecondary">
             Passionate about technology and progress.
           </p>
         </div>
@@ -26,7 +28,7 @@ const Header = () => {
             href={`${process.env.PUBLIC_URL}/CV_Fronted Developer_Diego Colin.pdf`}
             target="_blank" // Opens in a new tab
             rel="noopener noreferrer" // Security best practice for external links
-            className="flex items-center border border-buttonBlue text-buttonBlue font-bold py-2 px-4 rounded-full mr-2 hover:bg-buttonBlue hover:text-primaryDarkBlue transition-colors duration-200"
+            className="flex items-center border border-buttonBlue dark:border-dark-accent text-buttonBlue dark:text-dark-accent font-bold py-2 px-4 rounded-full mr-2 hover:bg-buttonBlue hover:text-primaryDarkBlue dark:hover:bg-dark-accent dark:hover:text-dark-background transition-colors duration-200"
           >
             <FaFileAlt className="mr-2" /> Resume
           </a>
@@ -41,7 +43,7 @@ const Header = () => {
               const position = section.offsetTop - offset; // Calculate position with offset
               window.scrollTo({ top: position, behavior: "smooth" }); // Smooth scroll
             }}
-            className="flex items-center bg-buttonBlue text-primaryDarkBlue hover:text-buttonBlue font-bold py-2 px-4 rounded-full mr-2 hover:bg-secondaryDarkBlue transition-colors duration-200"
+            className="flex items-center bg-buttonBlue text-primaryDarkBlue dark:text-dark-background hover:text-buttonBlue dark:hover:text-dark-accent font-bold py-2 px-4 rounded-full mr-2 hover:bg-secondaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
           >
             <FaFolderOpen className="mr-2" /> Portfolio
           </a>
@@ -53,7 +55,7 @@ const Header = () => {
         <img
           src={myPhoto}
           alt="Diego"
-          className="rounded-3xl h-2/3 w-3/6 mb-4 border-4 border-buttonBlue object-cover bg-black"
+          className="rounded-3xl h-2/3 w-3/6 mb-4 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
         />
       </div>
     </header>

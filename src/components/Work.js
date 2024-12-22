@@ -73,67 +73,70 @@ const projects = [
 // Work component displaying project cards
 const Work = () => {
   return (
-<section id="work" className="pr-28 pl-28 py-10 bg-primaryDarkBlue text-textWhite">
-  <h2 className="text-3xl font-bold mb-4">My Work<span className="text-buttonBlue">.</span></h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {projects.map((project, index) => (
-      <div key={index} className="bg-secondaryDarkBlue shadow-md rounded-lg p-6">
-        {project.imageUrl2 ? (
-          <div className="flex items-center gap-4">
-            <img
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-8/12 h-auto rounded-lg object-fill aspect-video"
-            />
-            <img
-              src={project.imageUrl2}
-              alt={`${project.title} Secondary`}
-              className="w-3/12 h-full rounded-lg object-fill aspect-[3/4]"
-            />
+    <section id="work" className="pr-28 pl-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary">
+      <h2 className="text-3xl font-bold mb-4">
+        My Work<span className="text-buttonBlue dark:text-dark-accent">.</span>
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <div key={index} className="bg-secondaryDarkBlue dark:bg-dark-background shadow-md rounded-lg p-6">
+            {project.imageUrl2 ? (
+              <div className="flex items-center gap-4">
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-8/12 h-auto rounded-lg object-fill aspect-video"
+                />
+                <img
+                  src={project.imageUrl2}
+                  alt={`${project.title} Secondary`}
+                  className="w-3/12 h-full rounded-lg object-fill aspect-[3/4]"
+                />
+              </div>
+            ) : (
+              <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="w-full h-auto rounded-lg object-fill aspect-video"
+              />
+            )}
+            <h3 className="text-xl font-bold mt-4 text-buttonBlue dark:text-dark-accent">
+              {project.title}
+            </h3>
+            <p className="mt-2">{project.description}</p>
+            <div className="flex space-x-2 mt-2">
+              {project.technologies.map((tech, techIndex) => (
+                <span key={techIndex} className="text-2xl">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="mt-4 flex space-x-4">
+              {project.codeLink && (
+                <a
+                  href={project.codeLink}
+                  className="flex items-center border border-buttonBlue dark:border-dark-accent text-buttonBlue dark:text-dark-accent font-bold py-2 px-4 rounded hover:bg-buttonBlue dark:hover:bg-dark-accent hover:text-primaryDarkBlue dark:hover:text-dark-background transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code <FaGithub className="ml-2" />
+                </a>
+              )}
+              {project.demoLink && (
+                <a
+                  href={project.demoLink}
+                  className="flex items-center bg-buttonBlue text-primaryDarkBlue dark:text-dark-background font-bold py-2 px-4 rounded hover:text-buttonBlue dark:hover:text-dark-accent hover:bg-primaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo <FaLink className="ml-2" />
+                </a>
+              )}
+            </div>
           </div>
-        ) : (
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-full h-auto rounded-lg object-fill aspect-video"
-          />
-        )}
-        <h3 className="text-xl font-bold mt-4 text-buttonBlue">{project.title}</h3>
-        <p className="mt-2">{project.description}</p>
-        <div className="flex space-x-2 mt-2">
-          {project.technologies.map((tech, techIndex) => (
-            <span key={techIndex} className="text-2xl">
-              {tech}
-            </span>
-          ))}
-        </div>
-        <div className="mt-4 flex space-x-4">
-          {project.codeLink && (
-            <a
-              href={project.codeLink}
-              className="flex items-center border border-buttonBlue text-buttonBlue font-bold py-2 px-4 rounded hover:bg-buttonBlue hover:text-primaryDarkBlue transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-               Code <FaGithub className="ml-2" />
-            </a>
-          )}
-          {project.demoLink && (
-            <a
-              href={project.demoLink}
-              className="flex items-center bg-buttonBlue text-primaryDarkBlue font-bold py-2 px-4 rounded hover:text-buttonBlue hover:bg-primaryDarkBlue transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-             Demo <FaLink className="ml-2" />
-            </a>
-          )}
-        </div>
+        ))}
       </div>
-    ))}
-  </div>
-</section>
-
+    </section>
   );
 };
 

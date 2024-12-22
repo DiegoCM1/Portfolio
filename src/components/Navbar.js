@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,27 +39,29 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-secondaryDarkBlue bg-opacity-90 backdrop-blur-md text-highlightBlue sticky top-0 z-50 shadow-lg">
+    <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 pl-28 pr-28">
         {/* Logo on the left */}
-        <div className="text-textWhite text-2xl font-bold hover:text-buttonBlue">
+        <div className="text-textWhite dark:text-dark-textPrimary text-2xl font-bold hover:text-buttonBlue dark:hover:text-dark-accent">
           <a href="#home" onClick={(e) => handleScroll(e, "home")}>
-           Diego<span className="text-buttonBlue">.</span>
-          </a> 
+            Diego<span className="text-buttonBlue dark:text-dark-accent">.</span>
+          </a>
         </div>
 
         {/* Navbar Links on the right */}
         <ul
           className={`lg:flex lg:space-x-6 ${
             isOpen ? "block" : "hidden"
-          } text-buttonBlue`}
+          } text-buttonBlue dark:text-dark-accent flex items-center`}
         >
           <li>
             <a
               href="#home"
               onClick={(e) => handleScroll(e, "home")}
-              className={`hover:text-textWhite ${
-                activeSection === "home" ? "text-textWhite font-bold" : ""
+              className={`hover:text-textWhite dark:hover:text-dark-textPrimary ${
+                activeSection === "home"
+                  ? "text-textWhite dark:text-dark-textPrimary font-bold"
+                  : ""
               }`}
             >
               Home
@@ -68,8 +71,10 @@ const Navbar = () => {
             <a
               href="#about"
               onClick={(e) => handleScroll(e, "about")}
-              className={`hover:text-textWhite ${
-                activeSection === "about" ? "text-textWhite font-bold" : ""
+              className={`hover:text-textWhite dark:hover:text-dark-textPrimary ${
+                activeSection === "about"
+                  ? "text-textWhite dark:text-dark-textPrimary font-bold"
+                  : ""
               }`}
             >
               About
@@ -79,8 +84,10 @@ const Navbar = () => {
             <a
               href="#work"
               onClick={(e) => handleScroll(e, "work")}
-              className={`hover:text-textWhite ${
-                activeSection === "work" ? "text-textWhite font-bold" : ""
+              className={`hover:text-textWhite dark:hover:text-dark-textPrimary ${
+                activeSection === "work"
+                  ? "text-textWhite dark:text-dark-textPrimary font-bold"
+                  : ""
               }`}
             >
               Projects
@@ -90,19 +97,24 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={(e) => handleScroll(e, "contact")}
-              className={`hover:text-textWhite ${
-                activeSection === "contact" ? "text-textWhite font-bold" : ""
+              className={`hover:text-textWhite dark:hover:text-dark-textPrimary ${
+                activeSection === "contact"
+                  ? "text-textWhite dark:text-dark-textPrimary font-bold"
+                  : ""
               }`}
             >
               Contact
             </a>
+          </li>
+          <li>
+            <DarkModeToggle />
           </li>
         </ul>
 
         {/* Hamburger Menu for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden block text-highlightBlue focus:outline-none"
+          className="lg:hidden block text-highlightBlue dark:text-dark-accent focus:outline-none"
         >
           ☰
         </button>
@@ -112,3 +124,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+  
