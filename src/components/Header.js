@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="bg-primaryDarkBlue dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28"
+      className="bg-primaryDarkBlue dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center"
     >
       {/* Left Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">

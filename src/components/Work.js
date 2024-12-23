@@ -18,7 +18,7 @@ const projects = [
     title: 'LearnIt',
     description: 'App that gives you the most powerful learning techniques, all in one',
     imageUrl: pcLearnitImage,
-    imageUrl2: phoneLearnitImage,
+    imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
     codeLink: 'https://github.com/DiegoCM1/LearnIt',
     demoLink: 'https://diegocm1.github.io/LearnIt/',
@@ -27,7 +27,7 @@ const projects = [
     title: 'Mokepon',
     description: 'This is an online multiplayer videogame',
     imageUrl: pcMokeponImage,
-    imageUrl2: phoneMokeponImage,
+    imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />, <FaNodeJs className="text-green-600" />],
     codeLink: 'https://github.com/DiegoCM1/Mokepon',
     demoLink: 'https://diegocm1.github.io/Mokepon/',
@@ -45,7 +45,7 @@ const projects = [
     title: 'MedAI',
     description: 'App that uses AI to give precise diagnostics and prevent future diseases based on the given information',
     imageUrl: LogoMedAI,
-    imageUrl2: InterfaceMedAI,
+    imageUrl2: null,
     technologies: [<FaReact className="text-blue-600" />, <SiTailwindcss className="text-teal-500" />],
     codeLink: 'https://github.com/Victor4286/MetaQuetzal',
     demoLink: 'https://project5.demo.com',
@@ -54,7 +54,7 @@ const projects = [
     title: 'BluEyes',
     description: 'App powered by AI focused on giving early alerts and life saving recommendations when a hurricane is near you. Uses Llama 3.2',
     imageUrl: pcBlueEyeImage,
-    imageUrl2: phoneBlueEyeImage,
+    imageUrl2: null,
     technologies: [<FaReact className="text-blue-600" />, <FaPython className="text-blue-600" />, <SiTailwindcss className="text-teal-500" /> ],
     codeLink: 'https://github.com/Victor4286/MetaQuetzal',
     demoLink: 'https://project5.demo.com',
@@ -73,45 +73,51 @@ const projects = [
 // Work component displaying project cards
 const Work = () => {
   return (
-    <section id="work" className="pr-28 pl-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary">
-      <h2 className="text-3xl font-bold mb-4">
+    <section id="work" className="px-6 sm:px-10 lg:px-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-center">
         My Work<span className="text-buttonBlue dark:text-dark-accent">.</span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-secondaryDarkBlue dark:bg-dark-background shadow-md rounded-lg p-6">
+          <div key={index} className="bg-secondaryDarkBlue dark:bg-dark-background shadow-md rounded-lg p-4 lg:p-6 flex flex-col">
             {project.imageUrl2 ? (
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <div className="w-full sm:w-8/12 aspect-video overflow-hidden rounded-lg">
+                  <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-full sm:w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
+                  <img
+                    src={project.imageUrl2}
+                    alt={`${project.title} Secondary`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="w-full aspect-video overflow-hidden rounded-lg">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-8/12 h-auto rounded-lg object-fill aspect-video"
-                />
-                <img
-                  src={project.imageUrl2}
-                  alt={`${project.title} Secondary`}
-                  className="w-3/12 h-full rounded-lg object-fill aspect-[3/4]"
+                  className="w-full h-full object-cover"
                 />
               </div>
-            ) : (
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-auto rounded-lg object-fill aspect-video"
-              />
             )}
-            <h3 className="text-xl font-bold mt-4 text-buttonBlue dark:text-dark-accent">
+            <h3 className="text-lg sm:text-xl font-bold mt-4 text-buttonBlue dark:text-dark-accent">
               {project.title}
             </h3>
-            <p className="mt-2">{project.description}</p>
-            <div className="flex space-x-2 mt-2">
+            <p className="mt-2 text-sm sm:text-base">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mt-2">
               {project.technologies.map((tech, techIndex) => (
-                <span key={techIndex} className="text-2xl">
+                <span key={techIndex} className="text-xl sm:text-2xl">
                   {tech}
                 </span>
               ))}
             </div>
-            <div className="mt-4 flex space-x-4">
+            <div className="mt-4 flex space-x-4 flex-wrap">
               {project.codeLink && (
                 <a
                   href={project.codeLink}
