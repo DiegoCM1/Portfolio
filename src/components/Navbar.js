@@ -40,19 +40,19 @@ const Navbar = () => {
 
   return (
     <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6 pl-28 pr-28">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6 lg:px-28">
         {/* Logo on the left */}
-        <div className="text-textWhite dark:text-dark-textPrimary text-2xl font-bold hover:text-buttonBlue dark:hover:text-dark-accent">
+        <div className="text-textWhite dark:text-dark-textPrimary text-xl md:text-2xl font-bold hover:text-buttonBlue dark:hover:text-dark-accent">
           <a href="#home" onClick={(e) => handleScroll(e, "home")}>
             Diego<span className="text-buttonBlue dark:text-dark-accent">.</span>
           </a>
         </div>
 
-        {/* Navbar Links on the right */}
+        {/* Navbar Links */}
         <ul
           className={`lg:flex lg:space-x-6 ${
             isOpen ? "block" : "hidden"
-          } text-buttonBlue dark:text-dark-accent flex items-center`}
+          } absolute lg:static top-16 left-0 right-0 bg-secondaryDarkBlue dark:bg-dark-background lg:bg-transparent lg:dark:bg-transparent text-buttonBlue dark:text-dark-accent flex-col lg:flex-row items-center space-y-4 lg:space-y-0 py-4 lg:py-0 px-6 lg:px-0 transition-all duration-300`}
         >
           <li>
             <a
@@ -124,4 +124,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-  

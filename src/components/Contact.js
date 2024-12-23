@@ -43,24 +43,23 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="p-10 h-screen text-textWhite bg-secondaryDarkBlue dark:bg-dark-background px-28 flex flex-col justify-center"
+      className="p-6 md:p-10 lg:px-28 h-full text-textWhite bg-secondaryDarkBlue dark:bg-dark-background flex flex-col justify-center"
     >
-      <div className="flex w-full">
-        <div className="text-center flex flex-col items-center justify-center mb-10 w-full">
-          <h2 className="text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
+      <div className="flex flex-col md:flex-row items-center md:justify-between mb-10">
+        <div className="text-center md:text-left w-full md:w-1/2 mb-8 md:mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
             Get in Touch<span className="text-buttonBlue dark:text-dark-accent">.</span>
           </h2>
-          <p className="text-lg dark:text-dark-textSecondary">
-            I would love to hear from you! Please fill out the form below to
-            reach out.
+          <p className="text-base md:text-lg dark:text-dark-textSecondary">
+            I would love to hear from you! Please fill out the form below to reach out.
           </p>
         </div>
 
-        <div className="mb-10 w-full">
+        <div className="w-full md:w-1/2">
           <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
-                className="block text-textWhite dark:text-dark-textPrimary text-sm font-bold mb-2"
+                className="block text-sm font-bold mb-2 text-textWhite dark:text-dark-textPrimary"
                 htmlFor="from_name"
               >
                 Name
@@ -77,7 +76,7 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <label
-                className="block text-textWhite dark:text-dark-textPrimary text-sm font-bold mb-2"
+                className="block text-sm font-bold mb-2 text-textWhite dark:text-dark-textPrimary"
                 htmlFor="from_email"
               >
                 Email
@@ -94,7 +93,7 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <label
-                className="block text-textWhite dark:text-dark-textPrimary text-sm font-bold mb-2"
+                className="block text-sm font-bold mb-2 text-textWhite dark:text-dark-textPrimary"
                 htmlFor="message"
               >
                 Message
@@ -111,7 +110,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="flex items-center bg-buttonBlue text-primaryDarkBlue dark:text-dark-background hover:text-buttonBlue dark:hover:text-dark-accent font-bold py-2 px-4 rounded-full mr-2 hover:bg-primaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
+                className="bg-buttonBlue text-primaryDarkBlue dark:text-dark-background font-bold py-2 px-6 rounded-full hover:bg-primaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
                 type="submit"
               >
                 Send
@@ -121,7 +120,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-center space-x-5 text-4xl mt-10">
+      <div className="flex justify-center space-x-4 text-2xl md:text-4xl mt-10">
         <a
           href="https://x.com/Diego__Mendiola?mx=2"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
