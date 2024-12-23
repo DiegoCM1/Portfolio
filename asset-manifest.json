@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1f9c8b61.css",
-    "main.js": "/Portfolio/static/js/main.105e17cf.js",
+    "main.css": "/Portfolio/static/css/main.0f4b79fe.css",
+    "main.js": "/Portfolio/static/js/main.9cfbe633.js",
     "static/media/pcBlueEyesImage.png": "/Portfolio/static/media/pcBlueEyesImage.d780740f0638f5a3f7d5.png",
     "static/media/pcEcommerce.png": "/Portfolio/static/media/pcEcommerce.a8267396a18326c084d3.png",
     "static/media/pcTodoApp.png": "/Portfolio/static/media/pcTodoApp.a96d2a62463475a4fd09.png",
@@ -14,11 +14,11 @@
     "static/media/LogoMedAI.webp": "/Portfolio/static/media/LogoMedAI.dc593a2619927697a3ce.webp",
     "static/media/phoneBluEyesImage.png": "/Portfolio/static/media/phoneBluEyesImage.9d574a32f641eac5a679.png",
     "index.html": "/Portfolio/index.html",
-    "main.1f9c8b61.css.map": "/Portfolio/static/css/main.1f9c8b61.css.map",
-    "main.105e17cf.js.map": "/Portfolio/static/js/main.105e17cf.js.map"
+    "main.0f4b79fe.css.map": "/Portfolio/static/css/main.0f4b79fe.css.map",
+    "main.9cfbe633.js.map": "/Portfolio/static/js/main.9cfbe633.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f9c8b61.css",
-    "static/js/main.105e17cf.js"
+    "static/css/main.0f4b79fe.css",
+    "static/js/main.9cfbe633.js"
   ]
 }
