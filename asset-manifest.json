@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ade8e094.css",
-    "main.js": "/Portfolio/static/js/main.35eec7c3.js",
+    "main.js": "/Portfolio/static/js/main.fb253bb9.js",
     "static/media/pcBlueEyesImage.png": "/Portfolio/static/media/pcBlueEyesImage.d780740f0638f5a3f7d5.png",
     "static/media/pcEcommerce.png": "/Portfolio/static/media/pcEcommerce.a8267396a18326c084d3.png",
     "static/media/pcTodoApp.png": "/Portfolio/static/media/pcTodoApp.a96d2a62463475a4fd09.png",
@@ -15,10 +15,10 @@
     "static/media/phoneBluEyesImage.png": "/Portfolio/static/media/phoneBluEyesImage.9d574a32f641eac5a679.png",
     "index.html": "/Portfolio/index.html",
     "main.ade8e094.css.map": "/Portfolio/static/css/main.ade8e094.css.map",
-    "main.35eec7c3.js.map": "/Portfolio/static/js/main.35eec7c3.js.map"
+    "main.fb253bb9.js.map": "/Portfolio/static/js/main.fb253bb9.js.map"
   },
   "entrypoints": [
     "static/css/main.ade8e094.css",
-    "static/js/main.35eec7c3.js"
+    "static/js/main.fb253bb9.js"
   ]
 }
