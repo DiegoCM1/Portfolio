@@ -16,7 +16,7 @@ import InterfaceMedAI from '../assets/InterfaceMedAI.webp';
 const projects = [
   {
     title: 'LearnIt',
-    description: 'App that gives you the most powerful learning techniques, all in one',
+    description: 'AI-powered study app enhancing learning through flashcards, the Feynman technique, Pomodoro timer, and an intelligent chatbot to boost learning',
     imageUrl: pcLearnitImage,
     imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'Mokepon',
-    description: 'This is an online multiplayer videogame',
+    description: 'Online strategy game where players select and battle unique creatures in thrilling competitive matches.',
     imageUrl: pcMokeponImage,
     imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />, <FaNodeJs className="text-green-600" />],
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: 'Ecommerce',
-    description: 'Ecommerce to sell cars',
+    description: 'A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.',
     imageUrl: pcEcommerceImage,
     imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: 'MedAI',
-    description: 'App that uses AI to give precise diagnostics and prevent future diseases based on the given information',
+    description: 'AI-powered mobile app focused on prevention and precise diagnostics by combining user input with the latest medical breakthroughs, revolutionizing healthcare.',
     imageUrl: LogoMedAI,
     imageUrl2: null,
     technologies: [<FaReact className="text-blue-600" />, <SiTailwindcss className="text-teal-500" />],
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: 'BluEyes',
-    description: 'App powered by AI focused on giving early alerts and life saving recommendations when a hurricane is near you. Uses Llama 3.2',
+    description: "AI-powered chatbot app providing early hurricane alerts and life-saving recommendations, winner of Meta's Hackathon.",
     imageUrl: pcBlueEyeImage,
     imageUrl2: null,
     technologies: [<FaReact className="text-blue-600" />, <FaPython className="text-blue-600" />, <SiTailwindcss className="text-teal-500" /> ],
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: 'To-do App',
-    description: 'To-do app that will help you getting things done',
+    description: 'Simple and efficient task manager to help users stay organized and on top of their daily goals.',
     imageUrl: pcTodoImage,
     imageUrl2: null,
     technologies: [<FaReact className="text-blue-600" />, <FaNodeJs className="text-green-600" />, <SiTailwindcss className="text-teal-500" />],
