@@ -22,7 +22,7 @@ const DarkModeToggle = () => {
     >
       <div
         className={`w-6 h-6 rounded-full flex items-center justify-center transform transition-transform ${
-          darkMode ? "translate-x-6 bg-yellow-500" : "translate-x-0 bg-gray-900"
+          darkMode ? "translate-x-6 bg-blue-500" : "translate-x-0 bg-gray-900"
         }`}
       >
         {darkMode ? (

@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: 'Ecommerce',
-    description: 'A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.',
+    description: 'Clone of Mercado Libre in process. A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.',
     imageUrl: pcEcommerceImage,
     imageUrl2: null,
     technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],

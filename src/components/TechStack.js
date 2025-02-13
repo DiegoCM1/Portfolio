@@ -39,14 +39,6 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">Tailwind CSS</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <SiReact className="text-blue-500 text-4xl md:text-5xl" />
-          <p className="text-xs md:text-sm mt-2 text-textWhite">React Native</p>
-        </div>
-        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <SiTailwindcss className="text-purple-500 text-4xl md:text-5xl" />
-          <p className="text-xs md:text-sm mt-2 text-textWhite">NativeWind</p>
-        </div>
-        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <FaGit className="text-red-600 text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Git</p>
         </div>

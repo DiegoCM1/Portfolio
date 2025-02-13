@@ -48,10 +48,12 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row items-center md:justify-between mb-10">
         <div className="text-center md:text-left w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
-            Get in Touch<span className="text-buttonBlue dark:text-dark-accent">.</span>
+            Get in Touch
+            <span className="text-buttonBlue dark:text-dark-accent">.</span>
           </h2>
           <p className="text-base md:text-lg dark:text-dark-textSecondary">
-            I would love to hear from you! Please fill out the form below to reach out.
+            I would love to hear from you! Please fill out the form to reach
+            out.
           </p>
         </div>
 
@@ -122,24 +124,28 @@ const Contact = () => {
 
       <div className="flex justify-center space-x-4 text-2xl md:text-4xl mt-10">
         <a
+          target="_blank"
           href="https://x.com/Diego__Mendiola?mx=2"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
           <FaTwitter />
         </a>
         <a
+          target="_blank"
           href="https://www.linkedin.com/in/luis-colin-mendiola-974679176"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
           <FaLinkedin />
         </a>
         <a
+          target="_blank"
           href="https://github.com/DiegoCM1"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
           <FaGithub />
         </a>
         <a
+          target="_blank"
           href="https://www.instagram.com/diego1_cm/"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >

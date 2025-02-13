@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
-import myPhoto from "../assets/Me3.jpg";
+import myPhoto from "../assets/ME.jpg";
 
 const Header = () => {
   return (
