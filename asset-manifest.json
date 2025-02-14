@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ade8e094.css",
-    "main.js": "/Portfolio/static/js/main.fb253bb9.js",
+    "main.css": "/Portfolio/static/css/main.20619a11.css",
+    "main.js": "/Portfolio/static/js/main.37928a91.js",
     "static/media/pcBlueEyesImage.png": "/Portfolio/static/media/pcBlueEyesImage.d780740f0638f5a3f7d5.png",
-    "static/media/pcEcommerce.png": "/Portfolio/static/media/pcEcommerce.a8267396a18326c084d3.png",
     "static/media/pcTodoApp.png": "/Portfolio/static/media/pcTodoApp.a96d2a62463475a4fd09.png",
+    "static/media/pcEcommerce.png": "/Portfolio/static/media/pcEcommerce.d9db9d633529148877d3.png",
     "static/media/pcMokepon.png": "/Portfolio/static/media/pcMokepon.b5a933c6c603e49c6db2.png",
     "static/media/pcLearnit.png": "/Portfolio/static/media/pcLearnit.aad2f3996d0c0258baa4.png",
-    "static/media/Me3.jpg": "/Portfolio/static/media/Me3.7dc3ae5a06def3b4834d.jpg",
     "static/media/InterfaceMedAI.webp": "/Portfolio/static/media/InterfaceMedAI.34d3033b1afb39505339.webp",
     "static/media/phoneMokepon.png": "/Portfolio/static/media/phoneMokepon.3e4373d824c70e2b4d52.png",
     "static/media/phoneLearnit.png": "/Portfolio/static/media/phoneLearnit.dcd748ce16aebbb16d72.png",
     "static/media/LogoMedAI.webp": "/Portfolio/static/media/LogoMedAI.dc593a2619927697a3ce.webp",
+    "static/media/ME.jpg": "/Portfolio/static/media/ME.1ef69c26a2edb95b90a4.jpg",
     "static/media/phoneBluEyesImage.png": "/Portfolio/static/media/phoneBluEyesImage.9d574a32f641eac5a679.png",
     "index.html": "/Portfolio/index.html",
-    "main.ade8e094.css.map": "/Portfolio/static/css/main.ade8e094.css.map",
-    "main.fb253bb9.js.map": "/Portfolio/static/js/main.fb253bb9.js.map"
+    "main.20619a11.css.map": "/Portfolio/static/css/main.20619a11.css.map",
+    "main.37928a91.js.map": "/Portfolio/static/js/main.37928a91.js.map"
   },
   "entrypoints": [
-    "static/css/main.ade8e094.css",
-    "static/js/main.fb253bb9.js"
+    "static/css/main.20619a11.css",
+    "static/js/main.37928a91.js"
   ]
 }
