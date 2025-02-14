@@ -37,7 +37,7 @@ const projects = [
     description: 'Clone of Mercado Libre in process. A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.',
     imageUrl: pcEcommerceImage,
     imageUrl2: null,
-    technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />],
+    technologies: [<FaHtml5 className="text-orange-600" />, <FaCss3 className="text-blue-700" />, <FaJs className="text-yellow-500" />, <FaReact className="text-blue-600" />, <SiTailwindcss className="text-teal-500" />],
     codeLink: 'https://github.com/DiegoCM1/Ecommerce',
     demoLink: 'https://diegocm1.github.io/Ecommerce/',
   },
