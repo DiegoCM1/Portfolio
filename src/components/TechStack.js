@@ -43,11 +43,11 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">Git</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <FaGithub className="text-black text-4xl md:text-5xl" />
+          <FaGithub className="text-black dark:text-white text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">GitHub</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <FaFigma className="text-black text-4xl md:text-5xl" />
+          <FaFigma className="text-black dark:text-white text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Figma</p>
         </div>
       </div>

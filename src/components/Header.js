@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="bg-primaryDarkBlue dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center"
+      className="bg-primaryDarkBlue dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center "
     >
       {/* Left Section */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left ">
         <h2 className="text-xl sm:text-2xl md:text-4xl mt-2 text-textWhite dark:text-dark-textPrimary">
           Hi, I'm Diego
         </h2>
@@ -49,11 +49,11 @@ const Header = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/2 flex items-center justify-center md:mt-0">
+      <div className="w-full md:w-1/2 flex items-center justify-center md:mt-0 ">
         <img
           src={myPhoto}
           alt="Diego"
-          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-3/6 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
+          className=" rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-5/6 border-4 border-buttonBlue dark:border-dark-accent object-full bg-black"
         />
       </div>
     </header>
