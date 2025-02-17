@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="relative dark:bg-dark-background text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center overflow-hidden"
+      className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center overflow-hidden"
     >
       {/* Particles Background */}
       <ParticlesBackground />
@@ -57,7 +57,7 @@ const Header = () => {
         <img
           src={myPhoto}
           alt="Diego"
-          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-5/6 border-4 border-buttonBlue dark:border-dark-accent object-full bg-black"
+          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-full bg-black"
         />
       </div>
     </header>
