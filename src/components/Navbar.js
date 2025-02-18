@@ -39,8 +39,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6 lg:px-28">
+    <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg lg:px-28">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6 lg:px-0 md:px-0">
         {/* Logo on the left */}
         <div className="text-textWhite dark:text-dark-textPrimary text-xl md:text-2xl font-bold hover:text-buttonBlue dark:hover:text-dark-accent">
           <a href="#home" onClick={(e) => handleScroll(e, "home")}>
@@ -114,7 +114,7 @@ const Navbar = () => {
         {/* Hamburger Menu for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden block text-highlightBlue dark:text-dark-accent focus:outline-none"
+          className="lg:hidden block text-white dark:text-dark-accent focus:outline-none"
         >
           ☰
         </button>

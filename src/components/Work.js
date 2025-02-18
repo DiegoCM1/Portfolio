@@ -74,7 +74,7 @@ const projects = [
 const Work = () => {
   return (
     <section id="work" className="px-6 sm:px-10 lg:px-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-center">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
         My Work<span className="text-buttonBlue dark:text-dark-accent">.</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
