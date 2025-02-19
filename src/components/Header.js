@@ -57,7 +57,7 @@ const Header = () => {
         <img
           src={myPhoto}
           alt="Diego"
-          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-full bg-black"
+          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
         />
       </div>
     </header>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,12 +31,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("EmailJS Response:", result.text);
-          alert("Message Sent Successfully!");
+          toast.success("Message Sent Successfully!"); // Success toast
           setFormData({ from_name: "", from_email: "", message: "" }); // Reset form
         },
         (error) => {
           console.error("EmailJS Error:", error.text);
           alert("Failed to Send Message. Please try again later.");
+          toast.error("Failed to Send Message. Please try again."); // Error toast
         }
       );
   };
@@ -119,6 +121,10 @@ const Contact = () => {
               >
                 Send
               </button>
+
+              <>
+                <Toaster position="bottom-center" reverseOrder={false} />
+              </>
             </div>
           </form>
         </div>
