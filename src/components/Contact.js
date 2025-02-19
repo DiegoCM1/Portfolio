@@ -69,7 +69,7 @@ const Contact = () => {
                 Name
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border focus:border-buttonBlue rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
                 id="from_name"
                 type="text"
                 placeholder="Your Name"
@@ -86,7 +86,7 @@ const Contact = () => {
                 Email
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border focus:border-buttonBlue rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
                 id="from_email"
                 type="email"
                 placeholder="Your Email"
@@ -103,7 +103,7 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border focus:border-buttonBlue rounded w-full py-2 px-3 text-textWhite dark:text-dark-textPrimary bg-primaryDarkBlue dark:bg-dark-surface leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 placeholder="Your Message"
                 rows="4"

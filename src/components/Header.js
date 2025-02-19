@@ -2,6 +2,7 @@ import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import myPhoto from "../assets/ME.jpg";
 import ParticlesBackground from "./ParticlesBackground";
+import TextGenerateEffect from "./ui/TextGenerateEffect";
 
 const Header = () => {
   return (
@@ -14,15 +15,27 @@ const Header = () => {
 
       {/* Left Section */}
       <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-        <h2 className="text-xl sm:text-2xl md:text-4xl mt-2 text-textWhite dark:text-dark-textPrimary">
-          Hi, I'm Diego
-        </h2>
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-highlightBlue dark:text-dark-accent">
-          Frontend Developer
-        </h1>
-        <p className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary">
-          Passionate about technology and progress.
-        </p>
+        <TextGenerateEffect
+          words="Hi, I'm Diego"
+          className="text-xl sm:text-2xl md:text-4xl mt-2 text-textWhite dark:text-dark-textPrimary"
+          duration={300} // Duration for animation
+        />
+
+        {/* H1 - Title */}
+        <TextGenerateEffect
+          words="Frontend Developer"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold text-highlightBlue dark:text-dark-accent"
+          duration={300}  // Duration for animation
+          delay={900}     // Delay of 0.5 seconds before starting
+        />
+
+        {/* P - Description */}
+        <TextGenerateEffect
+          words="Passionate about technology and progress."
+          className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary"
+          duration={300}  // Duration for animation
+          delay={1800}     // Delay of 0.5 seconds before starting
+        />
 
         <div className="mt-6 flex flex-row w-full items-center justify-center md:justify-start">
           {/* Resume Button */}
