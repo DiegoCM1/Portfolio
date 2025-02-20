@@ -24,7 +24,7 @@ const Header = () => {
         {/* H1 - Title */}
         <TextGenerateEffect
           words="Frontend Developer"
-          className="text-3xl sm:text-5xl md:text-6xl font-bold text-highlightBlue dark:text-dark-accent"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold text-buttonBlue dark:text-dark-accent"
           duration={300}  // Duration for animation
           delay={900}     // Delay of 0.5 seconds before starting
         />
