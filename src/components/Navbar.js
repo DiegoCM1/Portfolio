@@ -35,6 +35,7 @@ const Navbar = () => {
         top: offsetPosition,
         behavior: "smooth",
       });
+      setIsOpen(!isOpen); // Close the mobile menu after clicking a link
     }
   };
 
