@@ -114,9 +114,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="bg-buttonBlue hover:bg-primaryDarkBlue text-primaryDarkBlue  hover:text-buttonBlue
-                font-bold py-2 px-6 rounded-full transition-colors duration-200
-                dark:hover:bg-buttonBlue dark:hover:text-white"
+                className="flex items-center border border-white dark:border-dark-accent text-white dark:text-dark-accent font-bold py-2 px-4 rounded hover:bg-buttonBlue hover:border-transparent dark:hover:bg-dark-accent hover:text-primaryDarkBlue dark:hover:text-dark-background transition-colors duration-200"
                 type="submit"
               >
                 Send

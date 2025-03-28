@@ -47,7 +47,7 @@ const ParticlesBackground = () => {
           },
         },
         interactivity: {
-          events: { onHover: { enable: true, mode: "grab" }, onClick: { enable: true, mode: "repulse" } },
+          events: { onHover: { enable: true, mode: "grab" }, onClick: { enable: true, mode: "repulse" }},
           modes: { grab: { distance: 200, line_linked: { opacity: 1 } }, push: { particles_nb: 5 } },
         },
       }}
