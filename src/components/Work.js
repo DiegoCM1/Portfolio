@@ -83,9 +83,9 @@ const projects = [
     demoLink: "https://project5.demo.com",
   },
   {
-    title: "BluEyes",
+    title: "BluEye",
     description:
-      "AI-powered chatbot app providing early hurricane alerts and life-saving recommendations, winner of Meta's Hackathon.",
+      "BluEye delivers real-time personalized guidance to help you prepare, survive, and recover from hurricanes — powered by cutting-edge AI technology and winner of Meta's hackathon.",
     imageUrl: pcBlueEyeImage,
     imageUrl2: null,
     technologies: [
@@ -94,7 +94,7 @@ const projects = [
       <SiTailwindcss className="text-teal-500" />,
     ],
     codeLink: "https://github.com/Victor4286/MetaQuetzal",
-    demoLink: "https://project5.demo.com",
+    demoLink: "https://blueyes-landing-l2ty.vercel.app/",
   },
   {
     title: "Vanilla To-do App",

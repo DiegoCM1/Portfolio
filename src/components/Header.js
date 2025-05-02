@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import myPhoto from "../assets/ME.jpg";
-import ParticlesBackground from "./ParticlesBackground";
+import ParticlesBackground from "./ui/ParticlesBackground";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
 
 const Header = () => {
