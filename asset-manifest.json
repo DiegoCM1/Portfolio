@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.0b0ca279.css",
-    "main.js": "/Portfolio/static/js/main.ddfb44fe.js",
+    "main.js": "/Portfolio/static/js/main.49e79687.js",
     "static/media/pcBlueEyesImage.png": "/Portfolio/static/media/pcBlueEyesImage.d780740f0638f5a3f7d5.png",
     "static/media/pcTodoApp.png": "/Portfolio/static/media/pcTodoApp.a96d2a62463475a4fd09.png",
     "static/media/pcEcommerce.png": "/Portfolio/static/media/pcEcommerce.d9db9d633529148877d3.png",
@@ -10,16 +10,16 @@
     "static/media/InterfaceMedAI.webp": "/Portfolio/static/media/InterfaceMedAI.34d3033b1afb39505339.webp",
     "static/media/phoneMokepon.png": "/Portfolio/static/media/phoneMokepon.3e4373d824c70e2b4d52.png",
     "static/media/phoneLearnit.png": "/Portfolio/static/media/phoneLearnit.dcd748ce16aebbb16d72.png",
+    "static/media/ME.jpg": "/Portfolio/static/media/ME.3281eb5abd2df5f7bca1.jpg",
     "static/media/LogoMedAI.webp": "/Portfolio/static/media/LogoMedAI.dc593a2619927697a3ce.webp",
     "static/media/phoneTodoApp.jpg": "/Portfolio/static/media/phoneTodoApp.7b65b61b07140f42fe23.jpg",
-    "static/media/ME.jpg": "/Portfolio/static/media/ME.1ef69c26a2edb95b90a4.jpg",
     "static/media/phoneBluEyesImage.png": "/Portfolio/static/media/phoneBluEyesImage.9d574a32f641eac5a679.png",
     "index.html": "/Portfolio/index.html",
     "main.0b0ca279.css.map": "/Portfolio/static/css/main.0b0ca279.css.map",
-    "main.ddfb44fe.js.map": "/Portfolio/static/js/main.ddfb44fe.js.map"
+    "main.49e79687.js.map": "/Portfolio/static/js/main.49e79687.js.map"
   },
   "entrypoints": [
     "static/css/main.0b0ca279.css",
-    "static/js/main.ddfb44fe.js"
+    "static/js/main.49e79687.js"
   ]
 }
