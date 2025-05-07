@@ -1,14 +1,28 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import { useEffect, useState } from "react";
 
 const ParticlesBackground = () => {
   const [bgColor, setBgColor] = useState("#000000"); // Default Light Mode
 
   useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark");
-    setBgColor(isDarkMode ? "#121212" : "#000000");
+    const updateBackground = () => {
+      const isDarkMode = document.documentElement.classList.contains("dark");
+      setBgColor(isDarkMode ? "#121212" : "#000000");
+    };
+
+    // Run on initial load
+    updateBackground();
+
+    // Observe changes to the class attribute on <html>
+    const observer = new MutationObserver(updateBackground);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    // Cleanup
+    return () => observer.disconnect();
   }, []);
 
   const particlesInit = useCallback(async (engine) => {
@@ -47,8 +61,14 @@ const ParticlesBackground = () => {
           },
         },
         interactivity: {
-          events: { onHover: { enable: true, mode: "grab" }, onClick: { enable: true, mode: "repulse" }},
-          modes: { grab: { distance: 200, line_linked: { opacity: 1 } }, push: { particles_nb: 5 } },
+          events: {
+            onHover: { enable: true, mode: "grab" },
+            onClick: { enable: true, mode: "repulse" },
+          },
+          modes: {
+            grab: { distance: 200, line_linked: { opacity: 1 } },
+            push: { particles_nb: 5 },
+          },
         },
       }}
     />

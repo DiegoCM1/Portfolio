@@ -12,6 +12,7 @@ const Education = () => {
       <ul className="text-base md:text-lg space-y-3 md:space-y-4">
         <li>● Platzi</li>
         <li>● Coderhouse</li>
+        <li>● Udemy</li>
       </ul>
     </div>
   );
