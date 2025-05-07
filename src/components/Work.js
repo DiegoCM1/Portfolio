@@ -24,20 +24,20 @@ import InterfaceMedAI from "../assets/InterfaceMedAI.webp";
 
 // Array of project details
 const projects = [
-  {
-    title: "LearnIt",
-    description:
-      "AI-powered study app enhancing learning through flashcards, the Feynman technique, Pomodoro timer, and an intelligent chatbot to boost learning",
-    imageUrl: pcLearnitImage,
-    imageUrl2: null,
-    technologies: [
-      <FaHtml5 className="text-orange-600" />,
-      <FaCss3 className="text-blue-700" />,
-      <FaJs className="text-yellow-500" />,
-    ],
-    codeLink: "https://github.com/DiegoCM1/LearnIt",
-    demoLink: "https://diegocm1.github.io/LearnIt/",
-  },
+  // {
+  //   title: "LearnIt",
+  //   description:
+  //     "AI-powered study app enhancing learning through flashcards, the Feynman technique, Pomodoro timer, and an intelligent chatbot to boost learning",
+  //   imageUrl: pcLearnitImage,
+  //   imageUrl2: null,
+  //   technologies: [
+  //     <FaHtml5 className="text-orange-600" />,
+  //     <FaCss3 className="text-blue-700" />,
+  //     <FaJs className="text-yellow-500" />,
+  //   ],
+  //   codeLink: "https://github.com/DiegoCM1/LearnIt",
+  //   demoLink: "https://diegocm1.github.io/LearnIt/",
+  // },
   {
     title: "Mokepon",
     description:
@@ -53,35 +53,35 @@ const projects = [
     codeLink: "https://github.com/DiegoCM1/Mokepon",
     demoLink: "https://diegocm1.github.io/Mokepon/",
   },
-  {
-    title: "Ecommerce",
-    description:
-      "Clone of Mercado Libre in process. A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.",
-    imageUrl: pcEcommerceImage,
-    imageUrl2: null,
-    technologies: [
-      <FaHtml5 className="text-orange-600" />,
-      <FaCss3 className="text-blue-700" />,
-      <FaJs className="text-yellow-500" />,
-      <FaReact className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-500" />,
-    ],
-    codeLink: "https://github.com/DiegoCM1/Ecommerce",
-    demoLink: "https://diegocm1.github.io/Ecommerce/",
-  },
-  {
-    title: "MedAI",
-    description:
-      "AI-powered mobile app focused on prevention and precise diagnostics by combining user input with the latest medical breakthroughs, revolutionizing healthcare.",
-    imageUrl: LogoMedAI,
-    imageUrl2: null,
-    technologies: [
-      <FaReact className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-500" />,
-    ],
-    codeLink: "https://github.com/Victor4286/MetaQuetzal",
-    demoLink: "https://project5.demo.com",
-  },
+  // {
+  //   title: "Ecommerce",
+  //   description:
+  //     "Clone of Mercado Libre in process. A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.",
+  //   imageUrl: pcEcommerceImage,
+  //   imageUrl2: null,
+  //   technologies: [
+  //     <FaHtml5 className="text-orange-600" />,
+  //     <FaCss3 className="text-blue-700" />,
+  //     <FaJs className="text-yellow-500" />,
+  //     <FaReact className="text-blue-600" />,
+  //     <SiTailwindcss className="text-teal-500" />,
+  //   ],
+  //   codeLink: "https://github.com/DiegoCM1/Ecommerce",
+  //   demoLink: "https://diegocm1.github.io/Ecommerce/",
+  // },
+  // {
+  //   title: "MedAI",
+  //   description:
+  //     "AI-powered mobile app focused on prevention and precise diagnostics by combining user input with the latest medical breakthroughs, revolutionizing healthcare.",
+  //   imageUrl: LogoMedAI,
+  //   imageUrl2: null,
+  //   technologies: [
+  //     <FaReact className="text-blue-600" />,
+  //     <SiTailwindcss className="text-teal-500" />,
+  //   ],
+  //   codeLink: "https://github.com/Victor4286/MetaQuetzal",
+  //   demoLink: "https://project5.demo.com",
+  // },
   {
     title: "BluEye",
     description:
