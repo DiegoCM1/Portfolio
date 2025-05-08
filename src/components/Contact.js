@@ -50,12 +50,13 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row items-center md:justify-between mb-10">
         <div className="text-center md:text-left w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
-            Get in Touch
+            Let’s Build Something Together
             <span className="text-buttonBlue dark:text-dark-accent">.</span>
           </h2>
           <p className="text-base md:text-lg dark:text-dark-textSecondary">
-            I would love to hear from you! Please fill out the form to reach
-            out.
+            I’m open to job opportunities, AI collaborations, speaking gigs, or
+            anything worth creating. Use the form or hit me up directly through
+            my socials, let’s connect.
           </p>
         </div>
 

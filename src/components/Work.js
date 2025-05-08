@@ -94,12 +94,12 @@ const projects = [
       <SiTailwindcss className="text-teal-500" />,
     ],
     codeLink: "https://github.com/Victor4286/MetaQuetzal",
-    demoLink: "https://blueyes-landing-l2ty.vercel.app/",
+    demoLink: "https://blueye-landing.vercel.app/",
   },
   {
     title: "Vanilla To-do App",
     description:
-      "Simple and efficient task manager to help users stay organized and on top of their daily goals.",
+      "Simple and efficient task manager to help you stay organized and at the same time keep track of your goals.",
     imageUrl: pcTodoImage,
     imageUrl2: phoneTodoImage,
     technologies: [
