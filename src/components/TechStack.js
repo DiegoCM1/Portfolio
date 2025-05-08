@@ -6,9 +6,10 @@ import {
   FaJs,
   FaGit,
   FaGithub,
+  FaPython,
 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
-import { SiTailwindcss, SiReact } from "react-icons/si";
+import { SiTailwindcss, SiReact, SiVercel } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -49,6 +50,14 @@ const TechStack = () => {
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <FaFigma className="text-black dark:text-white text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Figma</p>
+        </div>
+        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
+          <FaPython className="text-[#1b5e94] text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">Python</p>
+        </div>
+        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
+          <SiVercel className="text-black dark:text-white text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">Vercel</p>
         </div>
       </div>
     </section>

@@ -26,7 +26,7 @@ const About = () => {
           >
             Meta's Llama 3.1 Impact Grants
           </a>
-          , building BluEye and stay active in the tech scene through events, networking, and
+          , building BluEye ($100,000 regional prize), and stay active in the tech scene through events, networking, and
           constant learning. I build fast, think big, and don’t wait for
           permission.
         </p>
