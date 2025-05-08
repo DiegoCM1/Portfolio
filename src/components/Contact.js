@@ -47,19 +47,22 @@ const Contact = () => {
       id="contact"
       className="p-6 md:p-10 lg:px-28 h-full text-textWhite bg-secondaryDarkBlue dark:bg-dark-background flex flex-col justify-center"
     >
-      <div className="flex flex-col md:flex-row items-center md:justify-between mb-10">
-        <div className="text-center md:text-left w-full md:w-1/2 mb-8 md:mb-0">
+      {/* Complete section */}
+      <div className="flex flex-col md:flex-row items-center md:justify-between mb-10 border border-red-700">
+        {/* Text */}
+        <div className="text-center  w-full mb-8 md:w-5/12 md:text-left md:h-5/6 md:mb-0  lg:w-1/2 lg:text-left lg:h-5/6 lg:mb-0 border border-green-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
             Let’s Build Something Together
             <span className="text-buttonBlue dark:text-dark-accent">.</span>
           </h2>
           <p className="text-base md:text-lg dark:text-dark-textSecondary">
-            I’m open to job opportunities, AI collaborations, speaking gigs, or
+            Open to job opportunities, AI collaborations, speaking gigs, or
             anything worth creating. Use the form or hit me up directly through
             my socials, let’s connect.
           </p>
         </div>
 
+        {/* Formulary */}
         <div className="w-full md:w-1/2">
           <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
             <div className="mb-4">

@@ -8,13 +8,13 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col md:flex-row px-6 md:px-28 items-center justify-center overflow-hidden"
+      className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col lg:flex-row px-6 md:px-12 lg:px-28 items-center justify-center overflow-hidden"
     >
       {/* Particles Background */}
       <ParticlesBackground />
 
       {/* Left Section */}
-      <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+      <div className="relative z-10 w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
         <TextGenerateEffect
           words="Hi, I'm Diego"
           className="text-xl sm:text-2xl md:text-4xl mt-2 text-textWhite dark:text-dark-textPrimary"
@@ -31,13 +31,13 @@ const Header = () => {
 
         {/* P - Description */}
         <TextGenerateEffect
-          words="Focused on building AI products that matter. Hackathon winner, conference speaker, and relentless learner."
+          words="Building AI products that matter. Hackathon winner and relentless learner."
           className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary"
           duration={300}  // Duration for animation
           delay={1800}     // Delay of 0.5 seconds before starting
         />
 
-        <div className="mt-6 flex flex-row w-full items-center justify-center md:justify-start">
+        <div className="mt-6 flex flex-row w-full items-center justify-center lg:justify-start">
           {/* Resume Button */}
           <a
             href={`${process.env.PUBLIC_URL}/CV_Fronted Developer_Diego Colin.pdf`}
@@ -66,11 +66,11 @@ const Header = () => {
       </div>
 
       {/* Right Section */}
-      <div className="relative w-full md:w-1/2 flex items-center justify-center md:mt-0">
+      <div className="relative w-full h-2/4 md:w-3/4 md:h-2/4 lg:w-full flex items-center justify-center md:mt-0">
         <img
           src={myPhoto}
           alt="Diego"
-          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
+          className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-full lg:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
         />
       </div>
     </header>
