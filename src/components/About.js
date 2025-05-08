@@ -14,11 +14,21 @@ const About = () => {
           About<span className="text-buttonBlue dark:text-dark-accent">.</span>
         </h2>
         <p className="text-base md:text-lg text-textWhite dark:text-dark-textSecondary leading-relaxed">
-          I'm fluent in English, enjoy practicing contact sports and playing basketball, as well as
-          strategy video games. I'm passionate about personal development and a
-          dedicated reader. I love traveling and attend tech conferences and
-          hackathons. I’m enthusiastic about contributing to open-source and
-          creating projects from scratch with like-minded people.
+          Self-taught full-stack developer and AI builder — bilingual in Spanish
+          and English, now learning Dutch. I’ve learned it all the same way I
+          learned to code: with discipline and obsession. I’ve co-founded two
+          startups, won the{" "}
+          <a
+            href="https://about.fb.com/news/2025/04/llama-impact-grant-recipients/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-400 transition-colors"
+          >
+            Meta's Llama 3.1 Impact Grants
+          </a>
+          , building BluEye and stay active in the tech scene through events, networking, and
+          constant learning. I build fast, think big, and don’t wait for
+          permission.
         </p>
       </div>
 

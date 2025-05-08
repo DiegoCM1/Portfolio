@@ -23,7 +23,7 @@ const Header = () => {
 
         {/* H1 - Title */}
         <TextGenerateEffect
-          words="Frontend Developer"
+          words="Full-Stack AI Developer & Startup Founder"
           className="text-3xl sm:text-5xl md:text-6xl font-bold text-buttonBlue dark:text-dark-accent"
           duration={300}  // Duration for animation
           delay={900}     // Delay of 0.5 seconds before starting
@@ -31,7 +31,7 @@ const Header = () => {
 
         {/* P - Description */}
         <TextGenerateEffect
-          words="Passionate about technology and progress."
+          words="Focused on building AI products that matter. Hackathon winner, conference speaker, and relentless learner."
           className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary"
           duration={300}  // Duration for animation
           delay={1800}     // Delay of 0.5 seconds before starting
