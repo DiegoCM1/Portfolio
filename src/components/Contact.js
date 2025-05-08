@@ -48,9 +48,9 @@ const Contact = () => {
       className="p-6 md:p-10 lg:px-28 h-full text-textWhite bg-secondaryDarkBlue dark:bg-dark-background flex flex-col justify-center"
     >
       {/* Complete section */}
-      <div className="flex flex-col md:flex-row items-center md:justify-between mb-10 border border-red-700">
+      <div className="flex flex-col md:flex-row items-center md:justify-between mb-10">
         {/* Text */}
-        <div className="text-center  w-full mb-8 md:w-5/12 md:text-left md:h-5/6 md:mb-0  lg:w-1/2 lg:text-left lg:h-5/6 lg:mb-0 border border-green-700">
+        <div className="text-center  w-full mb-8 md:w-5/12 md:text-left md:h-5/6 md:mb-0  lg:w-1/2 lg:text-left lg:h-5/6 lg:mb-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
             Let’s Build Something Together
             <span className="text-buttonBlue dark:text-dark-accent">.</span>
