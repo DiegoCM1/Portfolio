@@ -31,7 +31,7 @@ const Header = () => {
 
         {/* P - Description */}
         <TextGenerateEffect
-          words="Building AI products that matter. Hackathon winner and relentless learner."
+          words="Building AI products that matter. Meta's hackathon winner and relentless learner."
           className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary"
           duration={300}  // Duration for animation
           delay={1800}     // Delay of 0.5 seconds before starting

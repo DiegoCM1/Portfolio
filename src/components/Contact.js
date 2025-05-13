@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaDiscord } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -161,8 +161,16 @@ const Contact = () => {
         >
           <FaInstagram />
         </a>
+        <a
+          target="_blank"
+          href="https://discord.com/users/334183717184602113"
+          className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
+        >
+          <FaDiscord />
+        </a>
       </div>
     </section>
+    
   );
 };
 
