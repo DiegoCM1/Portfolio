@@ -14,9 +14,9 @@ import { SiTailwindcss, SiReact, SiVercel } from "react-icons/si";
 const TechStack = () => {
   return (
     <section className="pt-2">
-      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-textWhite">
-        Tech Stack:
-      </h3>
+        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary pb-2">
+          Tech Stack<span className="text-buttonBlue dark:text-dark-accent">.</span>
+        </h3>
       <div className="flex flex-wrap md:justify-start gap-4 text-3xl md:text-4xl">
         {/* Individual Tech Item */}
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
