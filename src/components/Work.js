@@ -1,97 +1,30 @@
 import React from "react";
 import {
   FaReact,
-  FaNodeJs,
   FaHtml5,
   FaCss3,
   FaJs,
   FaGithub,
-  FaLink,
-  FaPython,
+  FaLink
 } from "react-icons/fa"; // Importing necessary icons
-import { SiTailwindcss } from "react-icons/si";
-import pcLearnitImage from "../assets/pcLearnit.png";
-import phoneLearnitImage from "../assets/phoneLearnit.png";
-import pcMokeponImage from "../assets/pcMokepon.png";
-import phoneMokeponImage from "../assets/phoneMokepon.png";
+import { SiTailwindcss, SiVercel, SiNextdotjs } from "react-icons/si";
 import pcBlueEyeImage from "../assets/pcBlueEyesImage.png";
-import phoneBlueEyeImage from "../assets/phoneBluEyesImage.png";
-import pcEcommerceImage from "../assets/pcEcommerce.png";
 import pcTodoImage from "../assets/pcTodoApp.png";
 import phoneTodoImage from "../assets/phoneTodoApp.jpg";
-import LogoMedAI from "../assets/LogoMedAI.webp";
-import InterfaceMedAI from "../assets/InterfaceMedAI.webp";
 
 // Array of project details
 const projects = [
-  // {
-  //   title: "LearnIt",
-  //   description:
-  //     "AI-powered study app enhancing learning through flashcards, the Feynman technique, Pomodoro timer, and an intelligent chatbot to boost learning",
-  //   imageUrl: pcLearnitImage,
-  //   imageUrl2: null,
-  //   technologies: [
-  //     <FaHtml5 className="text-orange-600" />,
-  //     <FaCss3 className="text-blue-700" />,
-  //     <FaJs className="text-yellow-500" />,
-  //   ],
-  //   codeLink: "https://github.com/DiegoCM1/LearnIt",
-  //   demoLink: "https://diegocm1.github.io/LearnIt/",
-  // },
   {
-    title: "Mokepon",
-    description:
-      "Online strategy game where players select and battle unique creatures in thrilling competitive matches.",
-    imageUrl: pcMokeponImage,
-    imageUrl2: null,
-    technologies: [
-      <FaHtml5 className="text-orange-600" />,
-      <FaCss3 className="text-blue-700" />,
-      <FaJs className="text-yellow-500" />,
-      <FaNodeJs className="text-green-600" />,
-    ],
-    codeLink: "https://github.com/DiegoCM1/Mokepon",
-    demoLink: "https://diegocm1.github.io/Mokepon/",
-  },
-  // {
-  //   title: "Ecommerce",
-  //   description:
-  //     "Clone of Mercado Libre in process. A specialized platform for buying and selling cars and related accessories, streamlining the process and ensuring trustworthy transactions in the automotive market.",
-  //   imageUrl: pcEcommerceImage,
-  //   imageUrl2: null,
-  //   technologies: [
-  //     <FaHtml5 className="text-orange-600" />,
-  //     <FaCss3 className="text-blue-700" />,
-  //     <FaJs className="text-yellow-500" />,
-  //     <FaReact className="text-blue-600" />,
-  //     <SiTailwindcss className="text-teal-500" />,
-  //   ],
-  //   codeLink: "https://github.com/DiegoCM1/Ecommerce",
-  //   demoLink: "https://diegocm1.github.io/Ecommerce/",
-  // },
-  // {
-  //   title: "MedAI",
-  //   description:
-  //     "AI-powered mobile app focused on prevention and precise diagnostics by combining user input with the latest medical breakthroughs, revolutionizing healthcare.",
-  //   imageUrl: LogoMedAI,
-  //   imageUrl2: null,
-  //   technologies: [
-  //     <FaReact className="text-blue-600" />,
-  //     <SiTailwindcss className="text-teal-500" />,
-  //   ],
-  //   codeLink: "https://github.com/Victor4286/MetaQuetzal",
-  //   demoLink: "https://project5.demo.com",
-  // },
-  {
-    title: "BluEye",
+    title: "BluEye-Landing",
     description:
       "BluEye delivers real-time personalized guidance to help you prepare, survive, and recover from hurricanes — powered by cutting-edge AI technology and winner of Meta's hackathon.",
     imageUrl: pcBlueEyeImage,
     imageUrl2: null,
     technologies: [
       <FaReact className="text-blue-600" />,
-      <FaPython className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-500" />,
+      <SiNextdotjs className="text-black dark:text-white" />,
+      <SiTailwindcss className="text-green-500" />,
+      <SiVercel className="text-black dark:text-white" />,
     ],
     codeLink: "https://github.com/Victor4286/MetaQuetzal",
     demoLink: "https://blueye-landing.vercel.app/",

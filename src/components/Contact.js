@@ -52,7 +52,7 @@ const Contact = () => {
         {/* Text */}
         <div className="text-center  w-full mb-8 md:w-5/12 md:text-left md:h-5/6 md:mb-0  lg:w-1/2 lg:text-left lg:h-5/6 lg:mb-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary">
-            Let’s Build Something Together
+            Contact Me
             <span className="text-buttonBlue dark:text-dark-accent">.</span>
           </h2>
           <p className="text-base md:text-lg dark:text-dark-textSecondary">
