@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Achievements from './components/Achievements';
 import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
+      <Achievements />
       <About />
       <Work />
       <Contact />
