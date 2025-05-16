@@ -2,6 +2,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import ImpactGrantWinners from "../assets/llamaImpactRecipients.png";
 import BluEyeTeam from "../assets/bluEyeTeam.jpg";
 import BluEyeLogo from "../assets/bluEyeLogo.jpg";
+import logoLlamaCon2025 from "../assets/llamaCon2025Logo.webp";
+import MarkAndSatynLlamaCon2025 from "../assets/markTalkingLlamaCon2025.jpg";
+import llamaConRecipientTeams from "../assets/llamaCon2025RecipientTeams.jpg";
+import logoVerskod from "../assets/verskodLogo.png"
+import logoCOMS from "../assets/logoCOMS.jpeg"
+import Proycoms from "../assets/PROYCOMSEvent.png"
+import TeamCOMS from "../assets/teamCOMS.jpeg"
 import meTalentLand from "../assets/meAtTalentLand.jpg";
 import expoTalentLand from "../assets/expoTalentLand.jpg";
 
@@ -21,24 +28,28 @@ const achievements = [
     title: "Featured at LlamaCon 2025",
     subtitle: "Global showcase for AI Innovation by Meta",
     year: "2025",
-    logo: ImpactGrantWinners,
+    logo: logoLlamaCon2025,
+    logo2: MarkAndSatynLlamaCon2025,
+    logo3: llamaConRecipientTeams
   },
   {
     title: "Co-Founder of COMS & Verskod",
     subtitle: "Built MVPs & led front-end + strategy",
     year: "2023–2025",
-    logo: ImpactGrantWinners, 
+    logo: logoVerskod, 
+    logo2: logoCOMS
   },
   {
     title: "Speaker at PROYCOMS",
     subtitle: "",
     year: "2024",
-    link: "https://about.fb.com/news/2025/04/llama-impact-grant-recipients/",
-    logo: ImpactGrantWinners,
+    link: "https://www.linkedin.com/events/proycoms7265533245801328640/comments/",
+    logo: Proycoms,
+    logo2: TeamCOMS
   },
   {
-    title: "Talent Land 2025",
-    subtitle: "Networking, workshops & tech immersion",
+    title: "TalentLand 2025 - Google Cloud Scholarship",
+    subtitle: "Attended on full scholarship. Joined AI, Dev and startup-focused workshops and networking events.",
     year: "2025",
     logo: meTalentLand, 
     logo2: expoTalentLand, 
