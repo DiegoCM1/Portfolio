@@ -64,7 +64,7 @@ const Work = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-secondaryDarkBlue dark:bg-dark-background shadow-md rounded-lg p-4 lg:p-6 flex flex-col"
+            className="bg-primaryDarkBlue dark:bg-dark-background border border-buttonBlue/40 rounded-xl p-5 text-textWhite dark:text-dark-textPrimary shadow-md"
           >
             {/* Check if the project has a secondary image */}
             {project.imageUrl2 ? (
@@ -98,12 +98,12 @@ const Work = () => {
             )}
 
             {/* Project title */}
-            <h3 className="text-lg sm:text-xl font-bold mt-4 text-buttonBlue dark:text-dark-accent">
+            <h3 className="text-lg sm:text-xl font-bold mt-4 ">
               {project.title}
             </h3>
 
             {/* Project description */}
-            <p className="mt-2 text-sm sm:text-base">{project.description}</p>
+            <p className="mt-2 text-sm sm:text-base text-buttonBlue dark:text-dark-accent">{project.description}</p>
 
             {/* Display project technologies as icons/text */}
             <div className="flex flex-wrap gap-2 mt-2">

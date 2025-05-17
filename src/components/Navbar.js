@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg lg:px-28">
+    <nav className="bg-secondaryDarkBlue dark:bg-dark-background bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-lg md:px-10 lg:px-28">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 lg:px-0 md:px-0">
         {/* Logo on the left */}
         <div className="text-textWhite dark:text-dark-textPrimary text-xl md:text-2xl font-bold hover:text-buttonBlue dark:hover:text-dark-accent">
@@ -66,6 +66,19 @@ const Navbar = () => {
               }`}
             >
               Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#achievements"
+              onClick={(e) => handleScroll(e, "achievements")}
+              className={`hover:text-textWhite dark:hover:text-dark-textPrimary ${
+                activeSection === "achievements"
+                  ? "text-textWhite dark:text-dark-textPrimary font-bold"
+                  : ""
+              }`}
+            >
+              Achievements
             </a>
           </li>
           <li>
