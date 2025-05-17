@@ -8,7 +8,8 @@ import {
   FaLink
 } from "react-icons/fa"; // Importing necessary icons
 import { SiTailwindcss, SiVercel, SiNextdotjs } from "react-icons/si";
-import pcBlueEyeImage from "../assets/pcBlueEyesImage.png";
+import BluEyePC from "../assets/bluEyePc.png";
+import BluEyeMobile from "../assets/bluEyeMobile.png";
 import pcTodoImage from "../assets/pcTodoApp.png";
 import phoneTodoImage from "../assets/phoneTodoApp.jpg";
 
@@ -18,8 +19,8 @@ const projects = [
     title: "BluEye-Landing",
     description:
       "BluEye delivers real-time personalized guidance to help you prepare, survive, and recover from hurricanes — powered by cutting-edge AI technology and winner of Meta's hackathon.",
-    imageUrl: pcBlueEyeImage,
-    imageUrl2: null,
+    imageUrl: BluEyePC,
+    imageUrl2: BluEyeMobile,
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiNextdotjs className="text-black dark:text-white" />,
@@ -70,7 +71,7 @@ const Work = () => {
             {project.imageUrl2 ? (
               <div className="flex flex-row items-center gap-4">
                 {/* Main image */}
-                <div className="w-full sm:w-8/12 aspect-video overflow-hidden rounded-lg">
+                <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
                   <img
                     src={project.imageUrl}
                     alt={project.title}
@@ -78,7 +79,7 @@ const Work = () => {
                   />
                 </div>
                 {/* Secondary image */}
-                <div className="w-full sm:w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
+                <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
                   <img
                     src={project.imageUrl2}
                     alt={`${project.title} Secondary`}
