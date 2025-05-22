@@ -5,27 +5,35 @@ import {
   FaCss3,
   FaJs,
   FaGithub,
-  FaLink
+  FaLink,
 } from "react-icons/fa"; // Importing necessary icons
-import { SiTailwindcss, SiVercel, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiVercel,
+  SiNextdotjs,
+  SiTypescript,
+} from "react-icons/si";
 import BluEyePC from "../assets/bluEyePc.png";
 import BluEyeMobile from "../assets/bluEyeMobile.png";
 import pcTodoImage from "../assets/pcTodoApp.png";
 import phoneTodoImage from "../assets/phoneTodoApp.jpg";
+import alvaDesktopImage from "../assets/alvaDesktopImage.png";
+import alvaMobileImage from "../assets/alvaMobileImage.jpeg";
 
 // Array of project details
 const projects = [
   {
-    title: "BluEye-Landing",
+    title: "BluEye Official Landing Page",
     description:
       "BluEye delivers real-time personalized guidance to help you prepare, survive, and recover from hurricanes — powered by cutting-edge AI technology and winner of Meta's hackathon.",
     imageUrl: BluEyePC,
     imageUrl2: BluEyeMobile,
     technologies: [
       <FaReact className="text-blue-600" />,
-      <SiNextdotjs className="text-black dark:text-white" />,
-      <SiTailwindcss className="text-green-500" />,
-      <SiVercel className="text-black dark:text-white" />,
+      <SiNextdotjs className="text-white" />,
+      <SiTypescript className="text-blue-500" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/Victor4286/MetaQuetzal",
     demoLink: "https://blueye-landing.vercel.app/",
@@ -43,6 +51,22 @@ const projects = [
     ],
     codeLink: "https://github.com/DiegoCM1/TODOList",
     demoLink: "https://diegocm1.github.io/TODOList/",
+  },
+  {
+    title: "Alva – AI Assistant for sleeping and waking up (Landing Page)",
+    description:
+      "Modern and responsive landing page for Alva, a conversational alarm app. Built to introduce the product, capture early user interest, and encourage waitlist sign-ups.",
+    imageUrl: alvaDesktopImage,
+    imageUrl2: alvaMobileImage,
+    technologies: [
+      <FaReact className="text-blue-600" />,
+      <SiNextdotjs className="text-white" />,
+      <SiTypescript className="text-blue-500" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <SiVercel className="text-white" />,
+    ],
+    codeLink: "https://github.com/DiegoCM1/Alva",
+    demoLink: "https://alvaassistant.vercel.app/",
   },
 ];
 
@@ -104,7 +128,9 @@ const Work = () => {
             </h3>
 
             {/* Project description */}
-            <p className="mt-2 text-sm sm:text-base text-buttonBlue dark:text-dark-accent">{project.description}</p>
+            <p className="mt-2 text-sm sm:text-base text-buttonBlue dark:text-dark-accent">
+              {project.description}
+            </p>
 
             {/* Display project technologies as icons/text */}
             <div className="flex flex-wrap gap-2 mt-2">

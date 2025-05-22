@@ -17,7 +17,8 @@ import { useState, useEffect } from "react";
 const achievements = [
   {
     title: "Meta Llama Impact Grant Winner",
-    subtitle: "Won the $100K Pan-LATAM Hackathon with BluEyes, an AI-powered hurricane alert system recognized by Meta for social impact",
+    subtitle:
+      "Won the $100K Pan-LATAM Hackathon with BluEyes, an AI-powered hurricane alert system recognized by Meta for social impact",
     year: "2024-2025",
     link: "https://about.fb.com/news/2025/04/llama-impact-grant-recipients/",
     logo: ImpactGrantWinners,
@@ -26,7 +27,8 @@ const achievements = [
   },
   {
     title: "Featured at LlamaCon 2025",
-    subtitle: "Showcased BluEye as one of Meta’s top AI impact projects at their global LlamaCon event.",
+    subtitle:
+      "Showcased BluEye as one of Meta’s top AI impact projects at their global LlamaCon event.",
     year: "2025",
     link: "https://ai.meta.com/blog/llamacon-llama-news/",
     logo: logoLlamaCon2025,
@@ -35,7 +37,8 @@ const achievements = [
   },
   {
     title: "Co-Founder of COMS & Verskod",
-    subtitle: "Built and led early-stage products focused on workplace well-being (COMS) and AI/web development (Verskod).",
+    subtitle:
+      "Built and led early-stage products focused on workplace well-being (COMS) and AI/web development (Verskod).",
     year: "2023–2025",
     link: "https://www.linkedin.com/in/luis-colin-mendiola-974679176/",
     logo: logoVerskod,
@@ -43,7 +46,8 @@ const achievements = [
   },
   {
     title: "Speaker at PROYCOMS",
-    subtitle: "Spoke at an online conference on stress, work-life balance, and workplace culture",
+    subtitle:
+      "Spoke at an online conference on stress, work-life balance, and workplace culture",
     year: "2024",
     link: "https://www.linkedin.com/events/proycoms7265533245801328640/comments/",
     logo: Proycoms,
