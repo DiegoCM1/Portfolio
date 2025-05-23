@@ -1,4 +1,7 @@
+// Imports animation tools from Framer Motion for transitions and effects
 import { motion, AnimatePresence } from "framer-motion";
+
+// Imports images used in the achievements section
 import ImpactGrantWinners from "../assets/llamaImpactRecipients.png";
 import BluEyeTeam from "../assets/bluEyeTeam.jpg";
 import BluEyeLogo from "../assets/bluEyeLogo.jpg";
@@ -12,8 +15,10 @@ import TeamCOMS from "../assets/teamCOMS.jpeg";
 import meTalentLand from "../assets/meAtTalentLand.jpg";
 import expoTalentLand from "../assets/expoTalentLand.jpg";
 
+// React hooks for state and lifecycle
 import { useState, useEffect } from "react";
 
+// Array of achievements to display as cards
 const achievements = [
   {
     title: "Meta Llama Impact Grant Winner",
@@ -64,45 +69,86 @@ const achievements = [
   },
 ];
 
+// Add this after the achievements array and before the component
+const slideAnimations = [
+  // Llama Grants
+  { 
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { x: 200, opacity: 0 },
+  },
+  // LlamaCon
+  {
+    initial: { x: -200, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: 200, opacity: 0 },
+  },
+  // Co-founder
+  {
+    initial: { x: -200, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { y: 200, opacity: 0 },
+  },
+  // Speaker PROYCOMS
+  {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: -200, opacity: 0 },
+  },
+  // TalentLand
+  {
+    initial: { x: 200, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: -200, opacity: 0 },
+  },
+];
+
 const Achievements = () => {
+  // State to track which image is shown in each card
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Handle image switching within a card
+  // Returns the currently active image for a given item, cycling through up to 3 images
   const getActiveImage = (item) => {
-    const images = [item.logo, item.logo2, item.logo3].filter(Boolean);
-    return images[currentImageIndex % images.length];
+    const images = [item.logo, item.logo2, item.logo3].filter(Boolean); // remove undefined/null
+    return images[currentImageIndex % images.length]; // cycle through them
   };
 
-  // Effect for automatic image switching
+  // Auto-increments image index every 3 seconds to trigger image changes
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentImageIndex((prev) => prev + 1);
-    }, 3000);
+    }, 3000); // every 3 seconds
 
+    // Clear interval on component unmount
     return () => clearInterval(imageInterval);
   }, []);
 
   return (
+    // Main container with padding and background color
     <section
       id="achievements"
       className="bg-primaryDarkBlue dark:bg-dark-surface px-6 sm:px-10 lg:px-28 py-10"
     >
+      {/* Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-textWhite dark:text-dark-textPrimary mb-10">
         Achievements
         <span className="text-buttonBlue">.</span>
       </h2>
 
+      {/* Grid layout for achievements */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Map through each achievement and create an animated card */}
         {achievements.map((item, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 20 }}
+            whileHover={{ scale: 1.05 }} // card enlarges slightly on hover
+            initial={{ opacity: 0, y: 20 }} // animation on entry
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }} // staggered animation
             viewport={{ once: true }}
             className="bg-primaryDarkBlue dark:bg-dark-background border border-buttonBlue/40 rounded-xl p-5 text-textWhite dark:text-dark-textPrimary shadow-md"
           >
+            {/* If the item has a link, make the whole card clickable */}
             {item.link && (
               <a
                 href={item.link}
@@ -110,23 +156,26 @@ const Achievements = () => {
                 rel="noopener noreferrer"
                 className=""
               >
-                {/* Modified image section */}
+                {/* Only render image section if there’s at least one image */}
                 {(item.logo || item.logo2) && (
                   <div className="relative h-48 mb-3 overflow-hidden">
                     <AnimatePresence mode="wait">
+                      {/* Image transition animation */}
                       <motion.img
-                        key={getActiveImage(item)} // key triggers re-animation on change
+                        key={getActiveImage(item)}
                         src={getActiveImage(item)}
                         alt={item.title}
-                        initial={{ x: 200, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: -200, opacity: 0 }}
+                        initial={slideAnimations[index % 5].initial}
+                        animate={slideAnimations[index % 5].animate}
+                        exit={slideAnimations[index % 5].exit}
                         transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="absolute top-0 left-0 w-full h-full object-cover"
                       />
                     </AnimatePresence>
                   </div>
                 )}
+
+                {/* Text content of the card */}
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className="text-sm text-buttonBlue mb-1">{item.subtitle}</p>
                 <span className="text-xs text-dark-textSecondary dark:text-textWhite/40">
@@ -141,4 +190,5 @@ const Achievements = () => {
   );
 };
 
+// Export the component for use in other parts of the app
 export default Achievements;
