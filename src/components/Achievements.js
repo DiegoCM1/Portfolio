@@ -91,8 +91,8 @@ const slideAnimations = [
   },
   // Speaker PROYCOMS
   {
-    initial: { y: 200, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
+    initial: { x: 200, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
     exit: { y: -200, opacity: 0 },
   },
   // TalentLand
@@ -168,7 +168,7 @@ const Achievements = () => {
                         initial={slideAnimations[index % 5].initial}
                         animate={slideAnimations[index % 5].animate}
                         exit={slideAnimations[index % 5].exit}
-                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
                         className="absolute top-0 left-0 w-full h-full object-cover"
                       />
                     </AnimatePresence>

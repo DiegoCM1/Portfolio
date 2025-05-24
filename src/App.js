@@ -6,12 +6,15 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import './index.css';
 import Navbar from './components/Navbar';
+import AskAssistantWidget from './components/askAsisstant';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Navbar />
+      <AskAssistantWidget />
       <Achievements />
       <About />
       <Work />
