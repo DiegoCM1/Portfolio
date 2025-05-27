@@ -27,7 +27,7 @@ const achievements = [
   {
     title: "Meta Llama Impact Grant Winner",
     subtitle:
-      "Won the $100K Pan-LATAM Hackathon with BluEyes, an AI-powered hurricane alert system recognized by Meta for social impact",
+      "Won the $100K Pan-LATAM Hackathon with BluEye, an AI-powered hurricane alert system recognized by Meta for social impact",
     year: "2024-2025",
     link: "https://about.fb.com/news/2025/04/llama-impact-grant-recipients/",
     logo: ImpactGrantWinners,
@@ -75,7 +75,7 @@ const achievements = [
   {
     title: "Participant – NASA Space Apps Challenge CDMX",
     subtitle:
-      "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal' — a project aimed to prevent natural disasters through AI and space tech. Collaborated with developers and researchers in an intense 48-hour innovation sprint.",
+      "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal' — a project aimed to prevent natural disasters through AI and space tech.",
     year: "2024",
     link: "https://www.linkedin.com/posts/luis-colin-mendiola-974679176_talentland2025-googlecloud-chess-activity-7328112958171979776-byzt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-4SgBzyI7GAGLRATnfw46MvawDqU5s8c",
     logo: NasaSpaceAppsLogo ,
