@@ -12,8 +12,12 @@ import logoVerskod from "../assets/verskodLogo.png";
 import logoCOMS from "../assets/logoCOMS.png";
 import Proycoms from "../assets/PROYCOMSEvent.png";
 import TeamCOMS from "../assets/teamCOMS.jpeg";
+import talentLandLogo from "../assets/talentLandMexicoLogo.jpg"
 import meTalentLand from "../assets/meAtTalentLand.jpg";
 import expoTalentLand from "../assets/expoTalentLand.jpg";
+import meAtNasaSpaceApps from "../assets/meAtNasaSpaceApps.jpg";
+import logoMetaquetzal from "../assets/logoMetaquetzal.jpg";
+import NasaSpaceAppsLogo from "../assets/nasaSpaceAppsLogo.png";
 
 // React hooks for state and lifecycle
 import { useState, useEffect } from "react";
@@ -64,15 +68,26 @@ const achievements = [
       "Attended on full scholarship. Joined AI, Dev and startup-focused workshops and networking events.",
     year: "2025",
     link: "https://www.linkedin.com/posts/luis-colin-mendiola-974679176_talentland2025-googlecloud-chess-activity-7328112958171979776-byzt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-4SgBzyI7GAGLRATnfw46MvawDqU5s8c",
-    logo: meTalentLand,
-    logo2: expoTalentLand,
+    logo: talentLandLogo,
+    logo2: meTalentLand,
+    logo3: expoTalentLand,
+  },
+  {
+    title: "Participant – NASA Space Apps Challenge CDMX",
+    subtitle:
+      "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal' — a project aimed to prevent natural disasters through AI and space tech. Collaborated with developers and researchers in an intense 48-hour innovation sprint.",
+    year: "2024",
+    link: "https://www.linkedin.com/posts/luis-colin-mendiola-974679176_talentland2025-googlecloud-chess-activity-7328112958171979776-byzt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-4SgBzyI7GAGLRATnfw46MvawDqU5s8c",
+    logo: NasaSpaceAppsLogo ,
+    logo2: meAtNasaSpaceApps,
+    logo3: logoMetaquetzal
   },
 ];
 
 // Add this after the achievements array and before the component
 const slideAnimations = [
   // Llama Grants
-  { 
+  {
     initial: { y: 200, opacity: 0 },
     animate: { y: 0, opacity: 1 },
     exit: { x: 200, opacity: 0 },
@@ -99,6 +114,12 @@ const slideAnimations = [
   {
     initial: { x: 200, opacity: 0 },
     animate: { x: 0, opacity: 1 },
+    exit: { x: -200, opacity: 0 },
+  },
+  // Nasa Space Apps
+    {
+    initial: { y: -200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
     exit: { x: -200, opacity: 0 },
   },
 ];
@@ -165,9 +186,9 @@ const Achievements = () => {
                         key={getActiveImage(item)}
                         src={getActiveImage(item)}
                         alt={item.title}
-                        initial={slideAnimations[index % 5].initial}
-                        animate={slideAnimations[index % 5].animate}
-                        exit={slideAnimations[index % 5].exit}
+                        initial={slideAnimations[index % 6].initial}
+                        animate={slideAnimations[index % 6].animate}
+                        exit={slideAnimations[index % 6].exit}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                         className="absolute top-0 left-0 w-full h-full object-cover"
                       />
