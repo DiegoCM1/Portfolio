@@ -1,5 +1,5 @@
 export async function askAI(question) {
-  const response = await fetch("http://localhost:8000/ask", {
+  const response = await fetch("portfolio-ai-assistant-production.up.railway.app", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
