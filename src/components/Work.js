@@ -19,6 +19,8 @@ import {
 } from "react-icons/si";
 import BluEyePC from "../assets/bluEyePc.png";
 import BluEyeMobile from "../assets/bluEyeMobile.png";
+import AiWorking from "../assets/ai-portfolio-working.gif"
+import idleAIAssistant from "../assets/idle-ai-portfolio.png"
 import pcTodoImage from "../assets/pcTodoApp.png";
 import phoneTodoImage from "../assets/phoneTodoApp.jpg";
 import alvaDesktopImage from "../assets/alvaDesktopImage.png";
@@ -46,8 +48,8 @@ const projects = [
     title: "AI Portfolio Assistant – Ask Me Anything",
     description:
       "A full-stack AI-powered assistant built to answer questions about my background, projects, and skills. The project demonstrates backend integration with LLM APIs using FastAPI, OpenRouter, and dynamic prompt handling.",
-    // imageUrl: portfolioAssistantDesktop,
-    // imageUrl2: portfolioAssistantMobile,
+    imageUrl: AiWorking,
+    imageUrl2: idleAIAssistant,
     technologies: [
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-500" />,
