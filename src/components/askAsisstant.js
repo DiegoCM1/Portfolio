@@ -25,7 +25,7 @@ export default function AskAssistantWidget() {
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error("Failed to get response:", error);
-      const errorMessage = { sender: "bot", text: "Something went wrong. Please try again." };
+      const errorMessage = { sender: "bot", text: "The assistant is taking a nap, try again soon." };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setLoading(false);

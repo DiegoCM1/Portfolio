@@ -37,12 +37,12 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">React</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <SiNextdotjs className="text-white text-4xl md:text-5xl" />
-          <p className="text-xs md:text-sm mt-2 text-textWhite">Next.js</p>
-        </div>
-        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <SiTailwindcss className="text-teal-500 text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Tailwind CSS</p>
+        </div>
+        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
+          <SiNextdotjs className="text-white text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">Next.js</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <FaGit className="text-red-600 text-4xl md:text-5xl" />
@@ -53,16 +53,12 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">GitHub</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <FaFigma className="text-black dark:text-white text-4xl md:text-5xl" />
-          <p className="text-xs md:text-sm mt-2 text-textWhite">Figma</p>
+          <SiVercel className="text-white text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">Vercel</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <FaPython className="text-[#1b5e94] text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Python</p>
-        </div>
-        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <SiVercel className="text-white text-4xl md:text-5xl" />
-          <p className="text-xs md:text-sm mt-2 text-textWhite">Vercel</p>
         </div>
       </div>
     </section>

@@ -41,8 +41,8 @@ const projects = [
       <SiTailwindcss className="text-teal-400" />,
       <SiVercel className="text-white" />,
     ],
-    codeLink: "https://github.com/Victor4286/MetaQuetzal",
-    demoLink: "https://blueye-landing.vercel.app/",
+    codeLink: "https://github.com/DiegoCM1/blueye-landing",
+    demoLink: "https://github.com/DiegoCM1/blueye-landing",
   },
   {
     title: "AI Portfolio Assistant – Ask Me Anything",
