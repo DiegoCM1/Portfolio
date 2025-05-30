@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import {
   FaReact,
   FaHtml5,
@@ -95,6 +95,9 @@ const projects = [
 
 // Work component displaying project cards
 const Work = () => {
+
+  const [modalImage, setModalImage] = useState(null); // Allows to click on images
+
   return (
     // Section for displaying work/projects
     <section
@@ -123,6 +126,8 @@ const Work = () => {
                     src={project.imageUrl}
                     alt={project.title}
                     className="w-full h-full object-cover"
+                    onClick={() => setModalImage(project.imageUrl)}
+
                   />
                 </div>
                 {/* Secondary image */}
@@ -131,6 +136,7 @@ const Work = () => {
                     src={project.imageUrl2}
                     alt={`${project.title} Secondary`}
                     className="w-full h-full object-cover"
+                    onClick={() => setModalImage(project.imageUrl2)}
                   />
                 </div>
               </div>
@@ -193,6 +199,20 @@ const Work = () => {
           </div>
         ))}
       </div>
+
+      {modalImage && (   // JSX to render when modalImage has a value
+        <div
+          onClick={() => setModalImage(null)}
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+        >
+          <img
+            src={modalImage}
+            alt="Zoomed"
+            className="max-w-full max-h-full rounded-lg shadow-lg"
+          />
+        </div>
+      )}
+
     </section>
   );
 };
