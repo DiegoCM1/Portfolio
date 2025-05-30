@@ -52,9 +52,9 @@ const projects = [
     imageUrl2: idleAIAssistant,
     technologies: [
       <FaPython className="text-blue-500" />,
-      <SiFastapi className="text-green-500" />,
-      <SiRailway className="text-green-600" />,
-      <SiOpenai className="text-green-600" />,
+      <SiFastapi className="text-green-300" />,
+      <SiRailway className="text-white" />,
+      <SiOpenai className="text-white" />,
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
     ],

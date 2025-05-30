@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { askAI } from "../utils/askAi";
-import { X, BotMessageSquare, Send } from 'lucide-react';
+import { X, BotMessageSquare, Send, LoaderCircle } from 'lucide-react';
 
 export default function AskAssistantWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +86,7 @@ export default function AskAssistantWidget() {
               disabled={loading}
               className="transition-colors duration-200 bg-transparent border border-white text-white  hover:bg-buttonBlue hover:border-none hover:text-secondaryDarkBlue dark:border dark:border-buttonBlue dark:bg-transparent dark:text-buttonBlue dark:hover:bg-buttonBlue dark:hover:text-secondaryDarkBlue font-bold rounded disabled:opacity-60 w-2/12 flex justify-center items-center"
             >
-              {loading ? "Asking..." : <Send />}
+              {loading ? <LoaderCircle className="animate-spin" /> : <Send />}
             </button>
           </form>
 
