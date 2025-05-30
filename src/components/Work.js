@@ -6,12 +6,16 @@ import {
   FaJs,
   FaGithub,
   FaLink,
+  FaPython
 } from "react-icons/fa"; // Importing necessary icons
 import {
   SiTailwindcss,
   SiVercel,
   SiNextdotjs,
   SiTypescript,
+  SiFastapi,
+  SiOpenai,
+  SiRailway
 } from "react-icons/si";
 import BluEyePC from "../assets/bluEyePc.png";
 import BluEyeMobile from "../assets/bluEyeMobile.png";
@@ -39,18 +43,21 @@ const projects = [
     demoLink: "https://blueye-landing.vercel.app/",
   },
   {
-    title: "Vanilla To-do App",
+    title: "AI Portfolio Assistant – Ask Me Anything",
     description:
-      "Simple and efficient task manager to help you stay organized and at the same time keep track of your goals.",
-    imageUrl: pcTodoImage,
-    imageUrl2: phoneTodoImage,
+      "A full-stack AI-powered assistant built to answer questions about my background, projects, and skills. The project demonstrates backend integration with LLM APIs using FastAPI, OpenRouter, and dynamic prompt handling.",
+    // imageUrl: portfolioAssistantDesktop,
+    // imageUrl2: portfolioAssistantMobile,
     technologies: [
-      <FaJs className="text-yellow-500" />,
-      <FaHtml5 className="text-orange-600" />,
-      <FaCss3 className="text-blue-600" />,
+      <FaPython className="text-blue-500" />,
+      <SiFastapi className="text-green-500" />,
+      <SiRailway className="text-green-600" />,
+      <SiOpenai className="text-green-600" />,
+      <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
     ],
-    codeLink: "https://github.com/DiegoCM1/TODOList",
-    demoLink: "https://diegocm1.github.io/TODOList/",
+    codeLink: "https://github.com/DiegoCM1/portfolio-ai-assistant",
+    demoLink: "https://yourportfolio.vercel.app/",
   },
   {
     title: "Alva – AI Assistant for sleeping and waking up (Landing Page)",
@@ -67,6 +74,20 @@ const projects = [
     ],
     codeLink: "https://github.com/DiegoCM1/Alva",
     demoLink: "https://alvaassistant.vercel.app/",
+  },
+  {
+    title: "Vanilla To-do App",
+    description:
+      "Simple and efficient task manager to help you stay organized and at the same time keep track of your goals.",
+    imageUrl: pcTodoImage,
+    imageUrl2: phoneTodoImage,
+    technologies: [
+      <FaJs className="text-yellow-500" />,
+      <FaHtml5 className="text-orange-600" />,
+      <FaCss3 className="text-blue-600" />,
+    ],
+    codeLink: "https://github.com/DiegoCM1/TODOList",
+    demoLink: "https://diegocm1.github.io/TODOList/",
   },
 ];
 
