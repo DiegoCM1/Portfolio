@@ -5,10 +5,8 @@ import { X, BotMessageSquare, Send, LoaderCircle } from 'lucide-react';
 export default function AskAssistantWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([]);
-  const textPlaceHolder = document.getElementById("textPlaceHolder")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +29,8 @@ export default function AskAssistantWidget() {
       setLoading(false);
     }
   };
+
+
 
   return (
     <>
@@ -61,9 +61,9 @@ export default function AskAssistantWidget() {
               messages.map((msg, index) => (
                 <div
                   key={index}
-                  className={`px-3 py-2 rounded max-w-[80%] ${msg.sender === "user"
-                    ? "bg-buttonBlue text-secondaryDarkBlue dark:text-primaryDarkBlue self-end ml-auto px-4 py-2 rounded-xl shadow-md max-w-[80%]"
-                    : "bg-primaryDarkBlue text-white border border-white dark:bg-transparent dark:text-buttonBlue dark:border-buttonBlue self-start mr-auto px-4 py-2 rounded-xl shadow-md max-w-[80%]"
+                  className={`px-3 py-2 rounded max-w-[90%] ${msg.sender === "user"
+                    ? "bg-buttonBlue text-secondaryDarkBlue dark:text-primaryDarkBlue self-end ml-auto px-4 py-2 rounded-xl shadow-md max-w-[90%]"
+                    : "bg-primaryDarkBlue text-white border border-white dark:bg-transparent dark:text-buttonBlue dark:border-buttonBlue self-start mr-auto px-4 py-2 rounded-xl shadow-md max-w-[90%]"
                     }`}
                 >
                   {msg.text}

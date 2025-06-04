@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaReact,
   FaHtml5,
@@ -8,8 +7,7 @@ import {
   FaGithub,
   FaPython,
 } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa6";
-import { SiTailwindcss, SiReact, SiVercel, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiVercel, SiNextdotjs } from "react-icons/si";
 
 const TechStack = () => {
   return (

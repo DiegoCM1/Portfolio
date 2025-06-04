@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import myPhoto from "../assets/ME.jpg";
 import ParticlesBackground from "./ui/ParticlesBackground";
@@ -40,7 +39,7 @@ const Header = () => {
         <div className="mt-6 flex flex-row w-full items-center justify-center lg:justify-start">
           {/* Resume Button */}
           <a
-            href={`${process.env.PUBLIC_URL}/CV_Fronted Developer_Diego Colin.pdf`}
+            href={`${process.env.PUBLIC_URL}/CV_Full-Stack AI Developer_Luis Diego Colín Mendiola.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center border border-buttonBlue dark:border-dark-accent text-buttonBlue dark:text-dark-accent font-bold py-2 px-4 rounded-full mr-2 hover:bg-buttonBlue hover:text-primaryDarkBlue dark:hover:bg-dark-accent dark:hover:text-dark-background transition-colors duration-200"
