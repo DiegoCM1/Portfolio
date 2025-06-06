@@ -7,7 +7,7 @@ import {
   FaGithub,
   FaPython,
 } from "react-icons/fa";
-import { SiTailwindcss, SiVercel, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiVercel, SiNextdotjs, SiRailway, SiFastapi } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -57,6 +57,14 @@ const TechStack = () => {
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
           <FaPython className="text-[#1b5e94] text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">Python</p>
+        </div>
+        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
+          <SiFastapi className="text-green-300 text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">FastAPI</p>
+        </div>
+        <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
+          <SiRailway className="text-white text-4xl md:text-5xl" />
+          <p className="text-xs md:text-sm mt-2 text-textWhite">Railway</p>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import {
   FaReact,
   FaHtml5,
@@ -15,10 +15,12 @@ import {
   SiTypescript,
   SiFastapi,
   SiOpenai,
-  SiRailway
+  SiRailway,
+  SiExpo
 } from "react-icons/si";
 import BluEyePC from "../assets/bluEyePc.png";
-import BluEyeMobile from "../assets/bluEyeMobile.png";
+import bluEyeInterface from "../assets/bluEyeInterface.gif";
+import bluEyeLandingMobile from "../assets/bluEyeMobile.png";
 import AiWorking from "../assets/ai-portfolio-working.gif"
 import idleAIAssistant from "../assets/idle-ai-portfolio.png"
 import pcTodoImage from "../assets/pcTodoApp.png";
@@ -29,11 +31,28 @@ import alvaMobileImage from "../assets/alvaMobileImage.jpeg";
 // Array of project details
 const projects = [
   {
-    title: "BluEye Official Landing Page",
+    title: "BluEye - Stay Safe Before, During, and After Hurricanes",
     description:
-      "BluEye delivers real-time personalized guidance to help you prepare, survive, and recover from hurricanes — powered by cutting-edge AI technology and winner of Meta's hackathon.",
+      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama 3.2 and weather APIs. Features include offline mode, dynamic checklists, and a conversational interface. Built with React Native on top of Expo, used NativeWind for styling, Python and FastAPI for the backend, and OpenRouter for LLM integration.",
     imageUrl: BluEyePC,
-    imageUrl2: BluEyeMobile,
+    imageUrl2: bluEyeInterface,
+    technologies: [
+      <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <FaPython className="text-blue-500" />,
+      <SiFastapi className="text-green-500" />,
+      <SiRailway className="text-white" />,
+      <SiExpo className="text-white" />,
+    ],
+    codeLink: "https://github.com/DiegoCM1/ai-blueye",
+    demoLink: "https://github.com/DiegoCM1/ai-blueye"
+  },
+  {
+    title: "BluEye - Official Landing Page",
+    description:
+      "Official landing page for BluEye, designed to communicate its AI-powered hurricane prevention mission with clarity and impact. Built with Next.js, Tailwind CSS, and TypeScript, the site features responsive layouts, optimized performance, and a modern UI. Hosted on Vercel, it supports real-time product storytelling and reinforces BluEye’s recognition as a Meta Hackathon-winning project.",
+    imageUrl: BluEyePC,
+    imageUrl2: bluEyeLandingMobile,
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiNextdotjs className="text-white" />,
