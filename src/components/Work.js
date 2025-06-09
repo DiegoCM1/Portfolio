@@ -18,7 +18,8 @@ import {
   SiRailway,
   SiExpo
 } from "react-icons/si";
-import BluEyePC from "../assets/bluEyePc.png";
+import BluEyePC from "../assets/pcBluEyeLanding.gif";
+import BluEyeMapPc from "../assets/pcBluEyeMap.png"
 import bluEyeInterface from "../assets/bluEyeInterface.gif";
 import bluEyeLandingMobile from "../assets/bluEyeMobile.png";
 import AiWorking from "../assets/ai-portfolio-working.gif"
@@ -33,8 +34,8 @@ const projects = [
   {
     title: "BluEye - Stay Safe Before, During, and After Hurricanes",
     description:
-      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama 3.2 and weather APIs. Features include offline mode, dynamic checklists, and a conversational interface. Built with React Native on top of Expo, used NativeWind for styling, Python and FastAPI for the backend, and OpenRouter for LLM integration.",
-    imageUrl: BluEyePC,
+      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama 3.2 and weather APIs. Features include offline mode, dynamic checklists, and a conversational interface. Built with React Native on top of Expo, used NativeWind for styling, OpenRouter for LLM integration, Python and FastAPI for the backend",
+    imageUrl: BluEyeMapPc,
     imageUrl2: bluEyeInterface,
     technologies: [
       <FaReact className="text-blue-600" />,
@@ -61,7 +62,7 @@ const projects = [
       <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/blueye-landing",
-    demoLink: "https://github.com/DiegoCM1/blueye-landing",
+    demoLink: "https://blueye-landing.vercel.app/",
   },
   {
     title: "AI Portfolio Assistant – Ask Me Anything",
