@@ -28,13 +28,16 @@ import pcTodoImage from "../assets/pcTodoApp.png";
 import phoneTodoImage from "../assets/phoneTodoApp.jpg";
 import alvaDesktopImage from "../assets/alvaDesktopImage.png";
 import alvaMobileImage from "../assets/alvaMobileImage.jpeg";
+import verskodLogo from "../assets/verskodLogo.png";
+import verskodLogo2 from "../assets/verskodLogo-2.jpg"
+
 
 // Array of project details
 const projects = [
   {
-    title: "BluEye - Stay Safe Before, During, and After Hurricanes",
+    title: "BluEye - MVP",
     description:
-      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama 3.2 and weather APIs. Features include offline mode, dynamic checklists, and a conversational interface. Built with React Native on top of Expo, used NativeWind for styling, OpenRouter for LLM integration, Python and FastAPI for the backend",
+      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama AI models and weather APIs. Features include multimodal online and text-only offline AI models, dynamic map and personalized alerts when a hurricane is near. Built with React Native on top of Expo, used NativeWind for styling, OpenRouter for LLM integration, Python and FastAPI for the backend",
     imageUrl: BluEyeMapPc,
     imageUrl2: bluEyeInterface,
     technologies: [
@@ -96,6 +99,23 @@ const projects = [
     ],
     codeLink: "https://github.com/DiegoCM1/Alva",
     demoLink: "https://alvaassistant.vercel.app/",
+  },
+  {
+    title: "Verskod - Official Landing Page",
+    description:
+      "Modern and responsive landing page for Verskod, my tech-driven company focused on AI education and innovation. Designed to showcase the brand's mission, present its vision, and invite users to join the community as early supporters of its upcoming tools and initiatives.",
+    imageUrl: verskodLogo,
+    imageUrl2: verskodLogo2,
+    technologies: [
+      <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <FaPython className="text-blue-500" />,
+      <SiFastapi className="text-green-500" />,
+      <SiRailway className="text-white" />,
+      <SiExpo className="text-white" />,
+    ],
+    codeLink: "https://github.com/DiegoCM1/verskod-landing",
+    demoLink: "https://verskod-landing.vercel.app/"
   },
   {
     title: "Vanilla To-do App",
