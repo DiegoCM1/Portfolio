@@ -103,16 +103,15 @@ const projects = [
   {
     title: "Verskod - Official Landing Page",
     description:
-      "Modern and responsive landing page for Verskod, my tech-driven company focused on AI education and innovation. Designed to showcase the brand's mission, present its vision, and invite users to join the community as early supporters of its upcoming tools and initiatives.",
+      "Modern and responsive landing page for Verskod, my tech-driven startup focused on AI education and innovation. Designed to showcase the brand's mission, present its vision, and invite users to join the community as early supporters of its upcoming tools and initiatives.",
     imageUrl: verskodLogo,
     imageUrl2: verskodLogo2,
     technologies: [
       <FaReact className="text-blue-600" />,
+      <SiNextdotjs className="text-white" />,
+      <SiTypescript className="text-blue-500" />,
       <SiTailwindcss className="text-teal-400" />,
-      <FaPython className="text-blue-500" />,
-      <SiFastapi className="text-green-500" />,
-      <SiRailway className="text-white" />,
-      <SiExpo className="text-white" />,
+      <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/verskod-landing",
     demoLink: "https://verskod-landing.vercel.app/"
