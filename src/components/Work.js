@@ -7,7 +7,7 @@ import {
   FaGithub,
   FaLink,
   FaPython
-} from "react-icons/fa"; // Importing necessary icons
+} from "react-icons/fa";
 import {
   SiTailwindcss,
   SiVercel,
@@ -16,8 +16,10 @@ import {
   SiFastapi,
   SiOpenai,
   SiRailway,
-  SiExpo
+  SiExpo,
+  SiOllama
 } from "react-icons/si";
+import OpenRouterIcon from "./icons/OpenRouterIcon";
 import BluEyePC from "../assets/pcBluEyeLanding.gif";
 import BluEyeMapPc from "../assets/pcBluEyeMap.png"
 import bluEyeInterface from "../assets/bluEyeInterface.gif";
@@ -47,6 +49,9 @@ const projects = [
       <SiFastapi className="text-green-500" />,
       <SiRailway className="text-white" />,
       <SiExpo className="text-white" />,
+      <OpenRouterIcon className="text-white w-6 h-6" />,
+      <SiOllama className="text-white" />,
+
     ],
     codeLink: "https://github.com/DiegoCM1/ai-blueye",
     demoLink: "https://github.com/DiegoCM1/ai-blueye"
@@ -80,6 +85,9 @@ const projects = [
       <SiOpenai className="text-white" />,
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
+      <OpenRouterIcon className="text-white w-6 h-6" />,
+      <SiOllama className="text-white" />,
+
     ],
     codeLink: "https://github.com/DiegoCM1/portfolio-ai-assistant",
     demoLink: "https://yourportfolio.vercel.app/",
