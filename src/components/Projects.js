@@ -134,8 +134,8 @@ const projects = [
   },
 ];
 
-// Work component displaying project cards
-const Work = () => {
+// Projects component displaying project cards
+const Projects = () => {
 
   const [modalImage, setModalImage] = useState(null); // Allows to click on images
 
@@ -258,4 +258,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;

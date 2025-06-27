@@ -47,19 +47,19 @@ const Header = () => {
             <FaFileAlt className="mr-2" /> Resume
           </a>
 
-          {/* Portfolio Button */}
+          {/* Projects Button */}
           <a
-            href="#work"
+            href="#projects"
             onClick={(e) => {
               e.preventDefault();
-              const section = document.querySelector("#work");
+              const section = document.querySelector("#projects");
               const offset = 60; // Adjust for navbar height
               const position = section.offsetTop - offset;
               window.scrollTo({ top: position, behavior: "smooth" });
             }}
             className="flex items-center justify-center bg-buttonBlue text-primaryDarkBlue dark:text-dark-background hover:text-buttonBlue dark:hover:text-dark-accent font-bold py-2 px-4 rounded-full hover:bg-secondaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
           >
-            <FaFolderOpen className="mr-2" /> Portfolio
+            <FaFolderOpen className="mr-2" /> Projects
           </a>
         </div>
       </div>
