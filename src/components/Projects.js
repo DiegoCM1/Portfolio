@@ -143,7 +143,7 @@ const Work = () => {
   return (
     // Section for displaying work/projects
     <section
-      id="work"
+      id="projects"
       className="px-6 sm:px-10 lg:px-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary"
     >
       {/* Section title */}

@@ -9,7 +9,7 @@ const About = () => {
       className="px-6 md:px-12 lg:px-28 py-10 bg-secondaryDarkBlue dark:bg-dark-background text-primaryDarkBlue dark:text-dark-textPrimary"
     >
       {/* Title Section */}
-      <div className="mb-6">
+      <div className="mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary pb-2">
           About<span className="text-buttonBlue dark:text-dark-accent">.</span>
         </h2>
