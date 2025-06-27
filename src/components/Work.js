@@ -43,15 +43,14 @@ const projects = [
     imageUrl: BluEyeMapPc,
     imageUrl2: bluEyeInterface,
     technologies: [
-      <FaReact className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-400" />,
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-500" />,
       <SiRailway className="text-white" />,
-      <SiExpo className="text-white" />,
       <OpenRouterIcon className="text-white w-6 h-6" />,
       <SiOllama className="text-white" />,
-
+      <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <SiExpo className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/ai-blueye",
     demoLink: "https://github.com/DiegoCM1/ai-blueye"
@@ -64,9 +63,9 @@ const projects = [
     imageUrl2: bluEyeLandingMobile,
     technologies: [
       <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
       <SiNextdotjs className="text-white" />,
       <SiTypescript className="text-blue-500" />,
-      <SiTailwindcss className="text-teal-400" />,
       <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/blueye-landing",
@@ -82,12 +81,8 @@ const projects = [
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-300" />,
       <SiRailway className="text-white" />,
-      <SiOpenai className="text-white" />,
-      <FaReact className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-400" />,
       <OpenRouterIcon className="text-white w-6 h-6" />,
-      <SiOllama className="text-white" />,
-
+      <SiOllama className="text-white" />
     ],
     codeLink: "https://github.com/DiegoCM1/portfolio-ai-assistant",
     demoLink: "https://yourportfolio.vercel.app/",
@@ -100,9 +95,9 @@ const projects = [
     imageUrl2: alvaMobileImage,
     technologies: [
       <FaReact className="text-blue-600" />,
-      <SiNextdotjs className="text-white" />,
-      <SiTypescript className="text-blue-500" />,
       <SiTailwindcss className="text-teal-400" />,
+      <SiTypescript className="text-blue-500" />,
+      <SiNextdotjs className="text-white" />,
       <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/Alva",
@@ -116,9 +111,9 @@ const projects = [
     imageUrl2: verskodLogo2,
     technologies: [
       <FaReact className="text-blue-600" />,
-      <SiNextdotjs className="text-white" />,
-      <SiTypescript className="text-blue-500" />,
       <SiTailwindcss className="text-teal-400" />,
+      <SiTypescript className="text-blue-500" />,
+      <SiNextdotjs className="text-white" />,
       <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/verskod-landing",

@@ -4,9 +4,9 @@ const Education = () => {
   return (
     <div className="text-textWhite">
       {/* Section Title */}
-        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary pb-2">
-          Education<span className="text-buttonBlue dark:text-dark-accent">.</span>
-        </h3>
+      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-textWhite dark:text-dark-textPrimary pb-2">
+        Education<span className="text-buttonBlue dark:text-dark-accent">.</span>
+      </h3>
       {/* Education List */}
       <ul className="text-base md:text-lg space-y-3 md:space-y-4">
         <li>
@@ -27,6 +27,13 @@ const Education = () => {
           <a href="https://cloudonair.withgoogle.com/events/startup-school-ai-q2-2025?utm_source=cloud_sfdc&utm_medium=GFS%3DFY25-Q1-LATAM-SMB33145-onlineevent-er-Q2StartupSchool-27574&utm_content=GFSLP" rel="noopener noreferrer" target="_blank">
             {" "}
             ● Google AI Startup School - AI for Founders (2025)
+          </a>
+        </li>
+
+        <li>
+          <a href="https://cloudonair.withgoogle.com/events/startup-school-ai-q2-2025?utm_source=cloud_sfdc&utm_medium=GFS%3DFY25-Q1-LATAM-SMB33145-onlineevent-er-Q2StartupSchool-27574&utm_content=GFSLP" rel="noopener noreferrer" target="_blank">
+            {" "}
+            ● Ecosistema Llama | Bootcamp | META, CENTRO (2025)
           </a>
         </li>
       </ul>
