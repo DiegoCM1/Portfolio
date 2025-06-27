@@ -14,24 +14,23 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiFastapi,
-  SiOpenai,
   SiRailway,
   SiExpo,
   SiOllama
 } from "react-icons/si";
 import OpenRouterIcon from "./icons/OpenRouterIcon";
-import BluEyePC from "../assets/pcBluEyeLanding.gif";
-import BluEyeMapPc from "../assets/pcBluEyeMap.png"
-import bluEyeInterface from "../assets/bluEyeInterface.gif";
-import bluEyeLandingMobile from "../assets/bluEyeMobile.png";
-import AiWorking from "../assets/ai-portfolio-working.gif"
-import idleAIAssistant from "../assets/idle-ai-portfolio.png"
-import pcTodoImage from "../assets/pcTodoApp.png";
-import phoneTodoImage from "../assets/phoneTodoApp.jpg";
-import alvaDesktopImage from "../assets/alvaDesktopImage.png";
-import alvaMobileImage from "../assets/alvaMobileImage.jpeg";
-import verskodLogo from "../assets/verskodLogo.png";
-import verskodLogo2 from "../assets/verskodLogo-2.jpg"
+import BluEyePC from "../assets/gifs/pcBluEyeLanding.gif";
+import BluEyeMapPc from "../assets/images/pcBluEyeMap.png";
+import bluEyeInterface from "../assets/gifs/bluEyeInterface.gif";
+import bluEyeLandingMobile from "../assets/images/bluEyeMobile.png";
+import AiWorking from "../assets/gifs/ai-portfolio-working.gif";
+import idleAIAssistant from "../assets/images/idle-ai-portfolio.png";
+import pcTodoImage from "../assets/images/pcTodoApp.png";
+import phoneTodoImage from "../assets/images/phoneTodoApp.jpg";
+import alvaDesktopImage from "../assets/images/alvaDesktopImage.png";
+import alvaMobileImage from "../assets/images/alvaMobileImage.jpeg";
+import verskodLogo from "../assets/images/verskodLogo.png";
+import verskodLogo2 from "../assets/images/verskodLogo-2.jpg"
 
 
 // Array of project details

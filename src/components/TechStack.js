@@ -33,7 +33,7 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">Git</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
-          <FaGithub className="text-black dark:text-white text-4xl md:text-5xl" />
+          <FaGithub className="text-white text-4xl md:text-5xl" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">GitHub</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center">
@@ -53,11 +53,11 @@ const TechStack = () => {
           <p className="text-xs md:text-sm mt-2 text-textWhite">Railway</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center ">
-          <OpenRouterIcon className="text-black dark:text-white w-10 h-10 md:w-12 md:h-12" />
+          <OpenRouterIcon className="text-white w-10 h-10 md:w-12 md:h-12" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">OpenRouter</p>
         </div>
         <div className="flex flex-col items-center m-2 w-20 h-20 md:w-24 md:h-24 justify-center ">
-          <SiOllama className="text-black dark:text-white w-10 h-10 md:w-12 md:h-12" />
+          <SiOllama className="text-white w-10 h-10 md:w-12 md:h-12" />
           <p className="text-xs md:text-sm mt-2 text-textWhite">LLaMA Family</p>
         </div>
       </div>
