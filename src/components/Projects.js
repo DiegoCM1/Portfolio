@@ -148,7 +148,7 @@ const Work = () => {
     >
       {/* Section title */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
-        My Work<span className="text-buttonBlue dark:text-dark-accent">.</span>
+        My Projects<span className="text-buttonBlue dark:text-dark-accent">.</span>
       </h2>
 
       {/* Grid layout for project cards */}

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Achievements from './components/Achievements';
 import About from './components/About';
-import Work from './components/Work';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './index.css';
 import Navbar from './components/Navbar';
@@ -17,7 +17,7 @@ function App() {
       <AskAssistantWidget />
       <Achievements />
       <About />
-      <Work />
+      <Projects />
       <Contact />
     </div>
   );
