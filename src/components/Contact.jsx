@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaDiscord } from "react-icons/fa";
+import XIcon from "./icons/XIcon";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -135,42 +136,41 @@ const Contact = () => {
       <div className="flex justify-center space-x-4 text-2xl md:text-4xl mt-10">
         <a
           target="_blank"
-          href="https://x.com/Diego__Mendiola?mx=2"
-          className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
-        >
-          <FaTwitter />
-        </a>
-        <a
-          target="_blank"
           href="https://www.linkedin.com/in/luis-colin-mendiola-974679176"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
-          <FaLinkedin />
+          <FaLinkedin className="w-6 h-6 md:w-8 md:h-8" />
         </a>
         <a
           target="_blank"
           href="https://github.com/DiegoCM1"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
-          <FaGithub />
+          <FaGithub className="w-6 h-6 md:w-8 md:h-8" />
         </a>
         <a
           target="_blank"
           href="https://www.instagram.com/diego1_cm/"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
-          <FaInstagram />
+          <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
         </a>
         <a
           target="_blank"
           href="https://discord.com/users/334183717184602113"
           className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
         >
-          <FaDiscord />
+          <FaDiscord className="w-6 h-6 md:w-8 md:h-8" />
+        </a>
+        <a
+          target="_blank"
+          href="https://x.com/Diego__Mendiola?mx=2"
+          className="text-buttonBlue dark:text-dark-accent hover:text-blue-300 dark:hover:text-dark-textSecondary transition-colors"
+        >
+          <XIcon className="w-6 h-6 md:w-8 md:h-8" />
         </a>
       </div>
     </section>
-    
   );
 };
 
