@@ -29,8 +29,8 @@ import pcTodoImage from "../assets/images/pcTodoApp.png";
 import phoneTodoImage from "../assets/images/phoneTodoApp.jpg";
 import alvaDesktopImage from "../assets/images/alvaDesktopImage.png";
 import alvaMobileImage from "../assets/images/alvaMobileImage.jpeg";
-import verskodLogo from "../assets/images/verskodLogo.png";
-import verskodLogo2 from "../assets/images/verskodLogo-2.jpg"
+import verskodLanding from "../assets/gifs/verskod-landing.gif";
+import verskodLandingPc from "../assets/gifs/verskod-landing-pc.gif";
 
 
 // Array of project details
@@ -106,8 +106,8 @@ const projects = [
     title: "Verskod - Official Landing Page",
     description:
       "Modern and responsive landing page for Verskod, my tech-driven startup focused on AI education and innovation. Designed to showcase the brand's mission, present its vision, and invite users to join the community as early supporters of its upcoming tools and initiatives.",
-    imageUrl: verskodLogo,
-    imageUrl2: verskodLogo2,
+    imageUrl: verskodLandingPc,
+    imageUrl2: verskodLanding,
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
