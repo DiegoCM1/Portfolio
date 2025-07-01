@@ -1,7 +1,10 @@
+import { lazy, Suspense } from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import myPhoto from "../assets/images/ME.webp";
-import ParticlesBackground from "./ui/ParticlesBackground";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
+const ParticlesBackground = lazy(() =>
+  import("./ui/ParticlesBackground")
+);
 
 const Header = () => {
   return (
@@ -10,7 +13,9 @@ const Header = () => {
       className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col lg:flex-row px-6 md:px-12 lg:px-28 items-center justify-center overflow-hidden"
     >
       {/* Particles Background */}
-      <ParticlesBackground />
+        <Suspense fallback={null}>
+          <ParticlesBackground />
+        </Suspense>
 
       {/* Left Section */}
       <div className="relative z-10 w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
@@ -24,16 +29,16 @@ const Header = () => {
         <TextGenerateEffect
           words="Full-Stack AI Developer & Startup Founder"
           className="text-3xl sm:text-5xl md:text-6xl font-bold text-buttonBlue dark:text-dark-accent"
-          duration={300}  // Duration for animation
-          delay={900}     // Delay of 0.5 seconds before starting
+          duration={300} // Duration for animation
+          delay={900} // Delay of 0.5 seconds before starting
         />
 
         {/* P - Description */}
         <TextGenerateEffect
           words="$100K Meta's Hackathon Winner | Building AI Products with Impact"
           className="mt-2 text-base sm:text-lg md:text-2xl text-textWhite dark:text-dark-textSecondary"
-          duration={300}  // Duration for animation
-          delay={1800}     // Delay of 0.5 seconds before starting
+          duration={300} // Duration for animation
+          delay={1800} // Delay of 0.5 seconds before starting
         />
 
         <div className="mt-6 flex flex-row w-full items-center justify-center lg:justify-start">

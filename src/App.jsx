@@ -2,9 +2,10 @@ import { lazy, Suspense } from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Achievements from "./components/Achievements";
 import About from "./components/About";
 import AskAssistantWidget from "./components/askAsisstant";
+
+const Achievements = lazy(() => import("./components/Achievements"));
 
 const Projects = lazy(() => import("./components/Projects"));
 const Contact = lazy(() => import("./components/Contact"));
@@ -15,14 +16,36 @@ function App() {
       <Header />
       <Navbar />
       <AskAssistantWidget />
-      <Achievements />
+
+      <Suspense
+        fallback={
+          <div className="text-center text-lg text-gray-400 py-10">
+            Loading projects...
+          </div>
+        }
+      >
+        <Achievements />
+      </Suspense>
+
       <About />
 
-      <Suspense fallback={<div className="text-center text-lg text-gray-400 py-10">Loading projects...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-lg text-gray-400 py-10">
+            Loading projects...
+          </div>
+        }
+      >
         <Projects />
       </Suspense>
 
-      <Suspense fallback={<div className="text-center text-lg text-gray-400 py-10">Loading contact...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-lg text-gray-400 py-10">
+            Loading contact...
+          </div>
+        }
+      >
         <Contact />
       </Suspense>
     </div>
