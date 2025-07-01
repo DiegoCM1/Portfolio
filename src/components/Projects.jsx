@@ -164,6 +164,7 @@ const Projects = () => {
                 <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
                   {project.imageUrl.endsWith(".mp4") ? (
                     <video
+                      loading="lazy"
                       autoPlay
                       loop
                       muted
@@ -175,6 +176,7 @@ const Projects = () => {
                     </video>
                   ) : (
                     <img
+                      loading="lazy"
                       src={project.imageUrl}
                       alt={project.title}
                       className="w-full h-full object-cover"
@@ -186,6 +188,7 @@ const Projects = () => {
                 <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
                   {project.imageUrl2.endsWith(".mp4") ? (
                     <video
+                      loading="lazy"
                       autoPlay
                       loop
                       muted
@@ -197,6 +200,7 @@ const Projects = () => {
                     </video>
                   ) : (
                     <img
+                      loading="lazy"
                       src={project.imageUrl2}
                       alt={`${project.title} Secondary`}
                       className="w-full h-full object-cover"

@@ -78,9 +78,9 @@ const achievements = [
       "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal'",
     year: "2024",
     link: "https://www.linkedin.com/posts/luis-colin-mendiola-974679176_talentland2025-googlecloud-chess-activity-7328112958171979776-byzt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-4SgBzyI7GAGLRATnfw46MvawDqU5s8c",
-    logo: NasaSpaceAppsLogo ,
+    logo: NasaSpaceAppsLogo,
     logo2: meAtNasaSpaceApps,
-    logo3: logoMetaquetzal
+    logo3: logoMetaquetzal,
   },
 ];
 
@@ -117,7 +117,7 @@ const slideAnimations = [
     exit: { x: -200, opacity: 0 },
   },
   // Nasa Space Apps
-    {
+  {
     initial: { y: -200, opacity: 0 },
     animate: { y: 0, opacity: 1 },
     exit: { x: -200, opacity: 0 },
@@ -183,6 +183,7 @@ const Achievements = () => {
                     <AnimatePresence mode="wait">
                       {/* Image transition animation */}
                       <motion.img
+                        loading="lazy"
                         key={getActiveImage(item)}
                         src={getActiveImage(item)}
                         alt={item.title}
