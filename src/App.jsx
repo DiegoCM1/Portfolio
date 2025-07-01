@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import AskAssistantWidget from "./components/askAsisstant";
 
@@ -13,7 +13,7 @@ const Contact = lazy(() => import("./components/Contact"));
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Hero />
       <Navbar />
       <AskAssistantWidget />
 

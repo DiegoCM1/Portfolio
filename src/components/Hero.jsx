@@ -1,10 +1,8 @@
-import { lazy, Suspense } from "react";
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import myPhoto from "../assets/images/ME.webp";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
-const ParticlesBackground = lazy(() =>
-  import("./ui/ParticlesBackground")
-);
+import ParticlesBackground from "./ui/ParticlesBackground"
+
 
 const Header = () => {
   return (
@@ -13,9 +11,7 @@ const Header = () => {
       className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col lg:flex-row px-6 md:px-12 lg:px-28 items-center justify-center overflow-hidden"
     >
       {/* Particles Background */}
-        <Suspense fallback={null}>
           <ParticlesBackground />
-        </Suspense>
 
       {/* Left Section */}
       <div className="relative z-10 w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
