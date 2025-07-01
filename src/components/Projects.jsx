@@ -20,17 +20,17 @@ import {
 } from "react-icons/si";
 import OpenRouterIcon from "./icons/OpenRouterIcon";
 import BluEyePC from "../assets/gifs/pcBluEyeLanding.gif";
-import BluEyeMapPc from "../assets/images/pcBluEyeMap.png";
+import BluEyeMapPc from "../assets/images/pcBluEyeMap.webp";
 import bluEyeInterface from "../assets/videos/bluEyeInterface.mp4";
-import bluEyeLandingMobile from "../assets/images/bluEyeMobile.png";
+import bluEyeLandingMobile from "../assets/images/bluEyeMobile.webp";
 import AiWorking from "../assets/videos/ai-portfolio-working.mp4";
-import idleAIAssistant from "../assets/images/idle-ai-portfolio.png";
-import pcTodoImage from "../assets/images/pcTodoApp.png";
-import phoneTodoImage from "../assets/images/phoneTodoApp.jpg";
-import alvaDesktopImage from "../assets/images/alvaDesktopImage.png";
-import alvaMobileImage from "../assets/images/alvaMobileImage.jpeg";
-import verskodLanding from "../assets/gifs/verskod-landing.gif";
-import verskodLandingPc from "../assets/gifs/verskod-landing-pc.gif";
+import idleAIAssistant from "../assets/images/idle-ai-portfolio.webp";
+import pcTodoImage from "../assets/images/pcTodoApp.webp";
+import phoneTodoImage from "../assets/images/phoneTodoApp.webp";
+import alvaDesktopImage from "../assets/images/alvaDesktopImage.webp";
+import alvaMobileImage from "../assets/images/alvaMobileImage.webp";
+import verskodLanding from "../assets/images/verskod-landing.webp";
+import verskodLandingPc from "../assets/images/verskod-landing-pc.webp";
 
 // Array of project details
 const projects = [
