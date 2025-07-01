@@ -73,9 +73,9 @@ const achievements = [
     logo3: expoTalentLand,
   },
   {
-    title: "Participant – NASA Space Apps Challenge CDMX",
+    title: "NASA Space Apps Challenge CDMX",
     subtitle:
-      "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal' — a project aimed to prevent natural disasters through AI and space tech.",
+      "Took part in NASA’s global hackathon focused on solving Earth and space-related challenges using open data. Co-created 'MetaQuetzal'",
     year: "2024",
     link: "https://www.linkedin.com/posts/luis-colin-mendiola-974679176_talentland2025-googlecloud-chess-activity-7328112958171979776-byzt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-4SgBzyI7GAGLRATnfw46MvawDqU5s8c",
     logo: NasaSpaceAppsLogo ,

@@ -6,7 +6,7 @@ import {
   FaJs,
   FaGithub,
   FaLink,
-  FaPython
+  FaPython,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -16,14 +16,14 @@ import {
   SiFastapi,
   SiRailway,
   SiExpo,
-  SiOllama
+  SiOllama,
 } from "react-icons/si";
 import OpenRouterIcon from "./icons/OpenRouterIcon";
 import BluEyePC from "../assets/gifs/pcBluEyeLanding.gif";
 import BluEyeMapPc from "../assets/images/pcBluEyeMap.png";
-import bluEyeInterface from "../assets/gifs/bluEyeInterface.gif";
+import bluEyeInterface from "../assets/videos/bluEyeInterface.mp4";
 import bluEyeLandingMobile from "../assets/images/bluEyeMobile.png";
-import AiWorking from "../assets/gifs/ai-portfolio-working.gif";
+import AiWorking from "../assets/videos/ai-portfolio-working.mp4";
 import idleAIAssistant from "../assets/images/idle-ai-portfolio.png";
 import pcTodoImage from "../assets/images/pcTodoApp.png";
 import phoneTodoImage from "../assets/images/phoneTodoApp.jpg";
@@ -31,7 +31,6 @@ import alvaDesktopImage from "../assets/images/alvaDesktopImage.png";
 import alvaMobileImage from "../assets/images/alvaMobileImage.jpeg";
 import verskodLanding from "../assets/gifs/verskod-landing.gif";
 import verskodLandingPc from "../assets/gifs/verskod-landing-pc.gif";
-
 
 // Array of project details
 const projects = [
@@ -52,7 +51,7 @@ const projects = [
       <SiExpo className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/ai-blueye",
-    demoLink: "https://github.com/DiegoCM1/ai-blueye"
+    demoLink: "https://github.com/DiegoCM1/ai-blueye",
   },
   {
     title: "BluEye - Official Landing Page",
@@ -81,7 +80,7 @@ const projects = [
       <SiFastapi className="text-green-300" />,
       <SiRailway className="text-white" />,
       <OpenRouterIcon className="text-white w-6 h-6" />,
-      <SiOllama className="text-white" />
+      <SiOllama className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/portfolio-ai-assistant",
     demoLink: "https://yourportfolio.vercel.app/",
@@ -116,7 +115,7 @@ const projects = [
       <SiVercel className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/verskod-landing",
-    demoLink: "https://verskod-landing.vercel.app/"
+    demoLink: "https://verskod-landing.vercel.app/",
   },
   {
     title: "Vanilla To-do App",
@@ -136,7 +135,6 @@ const projects = [
 
 // Projects component displaying project cards
 const Projects = () => {
-
   const [modalImage, setModalImage] = useState(null); // Allows to click on images
 
   return (
@@ -147,7 +145,8 @@ const Projects = () => {
     >
       {/* Section title */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
-        My Projects<span className="text-buttonBlue dark:text-dark-accent">.</span>
+        My Projects
+        <span className="text-buttonBlue dark:text-dark-accent">.</span>
       </h2>
 
       {/* Grid layout for project cards */}
@@ -163,22 +162,47 @@ const Projects = () => {
               <div className="flex flex-row items-center gap-4">
                 {/* Main image */}
                 <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                    onClick={() => setModalImage(project.imageUrl)}
-
-                  />
+                  {project.imageUrl.endsWith(".mp4") ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src={project.imageUrl} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img
+                      src={project.imageUrl}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onClick={() => setModalImage(project.imageUrl)}
+                    />
+                  )}
                 </div>
                 {/* Secondary image */}
                 <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
-                  <img
-                    src={project.imageUrl2}
-                    alt={`${project.title} Secondary`}
-                    className="w-full h-full object-cover"
-                    onClick={() => setModalImage(project.imageUrl2)}
-                  />
+                  {project.imageUrl2.endsWith(".mp4") ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src={project.imageUrl2} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img
+                      src={project.imageUrl2}
+                      alt={`${project.title} Secondary`}
+                      className="w-full h-full object-cover"
+                      onClick={() => setModalImage(project.imageUrl2)}
+                    />
+                  )}
                 </div>
               </div>
             ) : (
@@ -241,7 +265,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {modalImage && (   // JSX to render when modalImage has a value
+      {modalImage && ( // JSX to render when modalImage has a value
         <div
           onClick={() => setModalImage(null)}
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -253,7 +277,6 @@ const Projects = () => {
           />
         </div>
       )}
-
     </section>
   );
 };
