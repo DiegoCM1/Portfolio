@@ -26,7 +26,6 @@ const ParticlesBackground = () => {
   }, []);
 
   const particlesInit = useCallback(async (engine) => {
-    console.log("Particles engine initialized");
     await loadSlim(engine);
   }, []);
 
