@@ -1,5 +1,5 @@
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
-import myPhoto from "../assets/images/ME.jpg";
+import myPhoto from "../assets/images/ME.webp";
 import ParticlesBackground from "./ui/ParticlesBackground";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
 

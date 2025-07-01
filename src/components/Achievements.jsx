@@ -2,22 +2,22 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 // Imports images used in the achievements section
-import ImpactGrantWinners from "../assets/images/llamaImpactRecipients.png";
-import BluEyeTeam from "../assets/images/bluEyeTeam.jpg";
-import BluEyeLogo from "../assets/images/bluEyeLogo.jpg";
+import ImpactGrantWinners from "../assets/images/llamaImpactRecipients.webp";
+import BluEyeTeam from "../assets/images/bluEyeTeam.webp";
+import BluEyeLogo from "../assets/images/bluEyeLogo.webp";
 import logoLlamaCon2025 from "../assets/images/llamaCon2025Logo.webp";
-import MarkAndSatynLlamaCon2025 from "../assets/images/markTalkingLlamaCon2025.jpg";
-import llamaConRecipientTeams from "../assets/images/llamaCon2025RecipientTeams.jpg";
-import logoVerskod from "../assets/images/verskodLogo.png";
-import logoCOMS from "../assets/images/logoCOMS.png";
-import Proycoms from "../assets/images/PROYCOMSEvent.png";
-import TeamCOMS from "../assets/images/teamCOMS.jpeg";
-import talentLandLogo from "../assets/images/talentLandMexicoLogo.jpg";
-import meTalentLand from "../assets/images/meAtTalentLand.jpg";
-import expoTalentLand from "../assets/images/expoTalentLand.jpg";
-import meAtNasaSpaceApps from "../assets/images/meAtNasaSpaceApps.jpg";
-import logoMetaquetzal from "../assets/images/logoMetaquetzal.jpg";
-import NasaSpaceAppsLogo from "../assets/images/nasaSpaceAppsLogo.png";
+import MarkAndSatynLlamaCon2025 from "../assets/images/markTalkingLlamaCon2025.webp";
+import llamaConRecipientTeams from "../assets/images/llamaCon2025RecipientTeams.webp";
+import logoVerskod from "../assets/images/verskodLogo.webp";
+import logoCOMS from "../assets/images/logoCOMS.webp";
+import Proycoms from "../assets/images/PROYCOMSEvent.webp";
+import TeamCOMS from "../assets/images/teamCOMS.webp";
+import talentLandLogo from "../assets/images/talentLandMexicoLogo.webp";
+import meTalentLand from "../assets/images/meAtTalentLand.webp";
+import expoTalentLand from "../assets/images/expoTalentLand.webp";
+import meAtNasaSpaceApps from "../assets/images/meAtNasaSpaceApps.webp";
+import logoMetaquetzal from "../assets/images/logoMetaquetzal.webp";
+import NasaSpaceAppsLogo from "../assets/images/nasaSpaceAppsLogo.webp";
 
 // React hooks for state and lifecycle
 import { useState, useEffect } from "react";

@@ -19,7 +19,7 @@ import {
   SiOllama,
 } from "react-icons/si";
 import OpenRouterIcon from "./icons/OpenRouterIcon";
-import BluEyePC from "../assets/gifs/pcBluEyeLanding.gif";
+import BluEyePC from "../assets/images/pcBluEyeLanding.webp";
 import BluEyeMapPc from "../assets/images/pcBluEyeMap.webp";
 import bluEyeInterface from "../assets/videos/bluEyeInterface.mp4";
 import bluEyeLandingMobile from "../assets/images/bluEyeMobile.webp";
