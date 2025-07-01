@@ -170,6 +170,7 @@ const Projects = () => {
                       muted
                       playsInline
                       className="w-full h-full object-cover"
+                      onClick={() => setModalImage(project.imageUrl)}
                     >
                       <source src={project.imageUrl} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -194,6 +195,7 @@ const Projects = () => {
                       muted
                       playsInline
                       className="w-full h-full object-cover"
+                      onClick={() => setModalImage(project.imageUrl2)}
                     >
                       <source src={project.imageUrl2} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -269,16 +271,28 @@ const Projects = () => {
         ))}
       </div>
 
-      {modalImage && ( // JSX to render when modalImage has a value
+      {modalImage && (
         <div
           onClick={() => setModalImage(null)}
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
         >
-          <img
-            src={modalImage}
-            alt="Zoomed"
-            className="max-w-full max-h-full rounded-lg shadow-lg"
-          />
+          {/********  decide what to show  ********/}
+          {modalImage.endsWith(".mp4") ? (
+            <video
+              src={modalImage}
+              className="max-w-full max-h-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              controls // remove if you want it clean
+            />
+          ) : (
+            <img
+              src={modalImage}
+              alt="Zoomed"
+              className="max-w-full max-h-full rounded-lg shadow-lg"
+            />
+          )}
         </div>
       )}
     </section>
