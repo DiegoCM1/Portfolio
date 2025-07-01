@@ -1,7 +1,6 @@
 import { FaFileAlt, FaFolderOpen } from "react-icons/fa"; // Importing icons
 import TextGenerateEffect from "./ui/TextGenerateEffect";
-import ParticlesBackground from "./ui/ParticlesBackground"
-
+import ParticlesBackground from "./ui/ParticlesBackground";
 
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
       className="relative text-highlightBlue dark:text-dark-accent w-full h-screen flex flex-col lg:flex-row px-6 md:px-12 lg:px-28 items-center justify-center overflow-hidden"
     >
       {/* Particles Background */}
-          <ParticlesBackground />
+      <ParticlesBackground />
 
       {/* Left Section */}
       <div className="relative z-10 w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
@@ -68,7 +67,7 @@ const Header = () => {
       <div className="relative w-full h-2/4 md:w-3/4 md:h-2/4 lg:w-full flex items-center justify-center md:mt-0">
         <img
           src="/media/ME.webp"
-          alt="Diego"
+          alt="Diego Colin Mendiola"
           className="rounded-3xl h-3/4 w-4/5 sm:w-3/4 md:w-full lg:w-4/6 border-4 border-buttonBlue dark:border-dark-accent object-cover bg-black"
         />
       </div>
