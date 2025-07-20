@@ -47,7 +47,7 @@ const achievements = [
   {
     title: "Co-Founder of Verskod and BluEye",
     subtitle:
-      "Built and led early-stage products focused on workplace well-being (COMS) and AI/web development (Verskod).",
+      "Built and led early‑stage products: Verskod, a tech company based on AI products, and BluEye, a hurricane‑alert platform.",
     year: "2023–2025",
     link: "https://www.linkedin.com/in/luis-colin-mendiola-974679176/",
     logo: logoVerskod,
