@@ -36,6 +36,7 @@ export default function AskAssistantWidget() {
     <>
       {/* Floating button */}
       <button
+        alt="Ask Diego"
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 z-50 p-2 shadow-lg flex items-center justify-center bg-buttonBlue text-primaryDarkBlue hover:bg-primaryDarkBlue hover:text-buttonBlue dark:bg-transparent dark:border dark:border-buttonBlue dark:text-buttonBlue dark:hover:text-secondaryDarkBlue dark:hover:bg-buttonBlue font-bold rounded-full  dark:hover:bg-dark-secondary transition-colors duration-200 md:p-6"
       >

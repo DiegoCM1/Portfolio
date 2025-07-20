@@ -9,7 +9,7 @@ import logoLlamaCon2025 from "../assets/images/llamaCon2025Logo.webp";
 import MarkAndSatynLlamaCon2025 from "../assets/images/markTalkingLlamaCon2025.webp";
 import llamaConRecipientTeams from "../assets/images/llamaCon2025RecipientTeams.webp";
 import logoVerskod from "../assets/images/verskodLogo.webp";
-import logoCOMS from "../assets/images/logoCOMS.webp";
+import logoBlueye from "../assets/images/LogoBluEye.webp";
 import Proycoms from "../assets/images/PROYCOMSEvent.webp";
 import TeamCOMS from "../assets/images/teamCOMS.webp";
 import talentLandLogo from "../assets/images/talentLandMexicoLogo.webp";
@@ -45,13 +45,14 @@ const achievements = [
     logo3: llamaConRecipientTeams,
   },
   {
-    title: "Co-Founder of COMS & Verskod",
+    title: "Co-Founder of Verskod and BluEye",
     subtitle:
       "Built and led early-stage products focused on workplace well-being (COMS) and AI/web development (Verskod).",
     year: "2023–2025",
     link: "https://www.linkedin.com/in/luis-colin-mendiola-974679176/",
     logo: logoVerskod,
-    logo2: logoCOMS,
+    logo2: logoBlueye,
+
   },
   {
     title: "Speaker at PROYCOMS",

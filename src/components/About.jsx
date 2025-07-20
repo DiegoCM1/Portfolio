@@ -16,8 +16,7 @@ const About = () => {
         <p className="text-base md:text-lg text-textWhite dark:text-dark-textSecondary leading-relaxed">
           Self-taught full-stack developer and AI builder — bilingual in Spanish
           and English, now learning Dutch. I’ve learned it all the same way I
-          learned to code: with discipline and obsession. I’ve co-founded two
-          startups, won the{" "}
+          learned to code: with discipline and obsession. I’ve co-founded one startup, won the{" "}
           <a
             href="https://about.fb.com/news/2025/04/llama-impact-grant-recipients/"
             target="_blank"
