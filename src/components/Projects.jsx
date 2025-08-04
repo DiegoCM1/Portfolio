@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaLink,
   FaPython,
+  FaNewspaper
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -35,9 +36,25 @@ import verskodLandingPc from "../assets/images/verskod-landing-pc.webp";
 // Array of project details
 const projects = [
   {
-    title: "BluEye - MVP",
+    title: "BluEye MVP - Mobile (APK)",
     description:
-      "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama AI models and weather APIs. Features include multimodal online and text-only offline AI models, dynamic map and personalized alerts when a hurricane is near. Built with React Native on top of Expo, used NativeWind for styling, OpenRouter for LLM integration, Python and FastAPI for the backend",
+      "Developed as the core deliverable of our $100,000-winning project in Meta’s Llama Impact Hackathon, BluEye is an AI-powered hurricane assistant built for mobile. This React Native app delivers real-time, location-based alerts and preparedness guidance through an intuitive, multimodal interface. Designed with NativeWind and Tailwind CSS for a seamless user experience, it connects to a powerful AI backend for personalized, life-saving recommendations — all supported by Meta’s Llama ecosystem and grant program.",
+    imageUrl: BluEyeMapPc,
+    imageUrl2: bluEyeInterface,
+    technologies: [
+      <FaReact className="text-blue-600" />,
+      <SiTailwindcss className="text-teal-400" />,
+      <SiExpo className="text-white" />,
+      <SiRailway className="text-white" />,
+      // <SiExpressdotjs className="text-green-500" />, // Express
+    ],
+    codeLink: "https://github.com/DiegoCM1/MetaQuetzal",
+    demoLink: "https://expo.dev/artifacts/eas/vooZNx2xhnMGVyugxTXxR5.apk",
+  },
+  {
+    title: "BluEye - AI",
+    description:
+      "BluEye’s AI backend powers the app’s (MVP - APK) intelligent, multimodal response system using cutting-edge Llama AI models. Engineered with Python and FastAPI, it handles real-time weather analysis, provides offline-capable text-only AI models, and seamlessly integrates with OpenRouter and Ollama for robust AI performance. Deployed on Railway for scalable, reliable backend service.",
     imageUrl: BluEyeMapPc,
     imageUrl2: bluEyeInterface,
     technologies: [
@@ -46,17 +63,14 @@ const projects = [
       <SiRailway className="text-white" />,
       <OpenRouterIcon className="text-white w-6 h-6" />,
       <SiOllama className="text-white" />,
-      <FaReact className="text-blue-600" />,
-      <SiTailwindcss className="text-teal-400" />,
-      <SiExpo className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/ai-blueye",
-    demoLink: "https://github.com/DiegoCM1/ai-blueye",
+    docsLink: "https://github.com/DiegoCM1/MetaQuetzal",
   },
   {
     title: "BluEye - Official Landing Page",
     description:
-      "Official landing page for BluEye, designed to communicate its AI-powered hurricane prevention mission with clarity and impact. Built with Next.js, Tailwind CSS, and TypeScript, the site features responsive layouts, optimized performance, and a modern UI. Hosted on Vercel, it supports real-time product storytelling and reinforces BluEye’s recognition as a Meta Hackathon-winning project.",
+      "The official BluEye landing page showcases our award-winning hurricane prevention app, clearly communicating its purpose and impact. Designed with Next.js and styled using Tailwind CSS, it offers responsive layouts, optimized performance, and compelling storytelling to engage users and partners. Built with TypeScript for maintainability and hosted on Vercel for reliable and lightning-fast accessibility.",
     imageUrl: BluEyePC,
     imageUrl2: bluEyeLandingMobile,
     technologies: [
@@ -241,7 +255,7 @@ const Projects = () => {
               ))}
             </div>
 
-            {/* Links to project code and live demo */}
+            {/* Links to project code and live demo or docs*/}
             <div className="mt-4 flex space-x-4 flex-wrap">
               {/* GitHub Code Link */}
               {project.codeLink && (
@@ -266,11 +280,23 @@ const Projects = () => {
                   Demo <FaLink className="ml-2" />
                 </a>
               )}
+              {/* Docs Link */}
+              {project.docsLink && (
+                <a
+                  href={project.docsLink}
+                  className="flex items-center bg-buttonBlue text-primaryDarkBlue dark:text-dark-background font-bold py-2 px-4 rounded hover:text-buttonBlue dark:hover:text-dark-accent hover:bg-primaryDarkBlue dark:hover:bg-dark-secondary transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Docs <FaNewspaper className="ml-2" />
+                </a>
+              )}
             </div>
           </div>
         ))}
       </div>
 
+      {/* Modal for displaying clicked images/videos */}
       {modalImage && (
         <div
           onClick={() => setModalImage(null)}
@@ -284,7 +310,6 @@ const Projects = () => {
               autoPlay
               loop
               muted
-              controls // remove if you want it clean
             />
           ) : (
             <img
