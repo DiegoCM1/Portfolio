@@ -26,8 +26,6 @@ import bluEyeInterface from "../assets/videos/bluEyeInterface.mp4";
 import bluEyeLandingMobile from "../assets/images/bluEyeMobile.webp";
 import AiWorking from "../assets/videos/ai-portfolio-working.mp4";
 import idleAIAssistant from "../assets/images/idle-ai-portfolio.webp";
-import pcTodoImage from "../assets/images/pcTodoApp.webp";
-import phoneTodoImage from "../assets/images/phoneTodoApp.webp";
 import alvaDesktopImage from "../assets/images/alvaDesktopImage.webp";
 import alvaMobileImage from "../assets/images/alvaMobileImage.webp";
 import verskodLanding from "../assets/images/verskod-landing.webp";
@@ -64,8 +62,9 @@ const projects = [
     title: "BluEye MVP - Mobile (APK)",
     description:
       "Developed as the core deliverable of our $100,000-winning project in Meta’s Llama Impact Hackathon, BluEye is an AI-powered hurricane assistant built for mobile. This React Native app delivers real-time, location-based alerts and preparedness guidance through an intuitive, multimodal interface. Designed with NativeWind and Tailwind CSS for a seamless user experience, it connects to a powerful AI backend for personalized, life-saving recommendations — all supported by Meta’s Llama ecosystem and grant program.",
-    imageUrl: BluEyeMapPc,
-    imageUrl2: bluEyeInterface,
+    imageUrl: bluEyeInterface,
+    mobileImages: [bluEyeInterface],
+
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
@@ -155,20 +154,6 @@ const projects = [
     ],
     codeLink: "https://github.com/DiegoCM1/verskod-landing",
     demoLink: "https://verskod-landing.vercel.app/",
-  },
-  {
-    title: "Vanilla To-do App",
-    description:
-      "Simple and efficient task manager to help you stay organized and at the same time keep track of your goals.",
-    imageUrl: pcTodoImage,
-    mobileImages: [phoneTodoImage],
-    technologies: [
-      <FaJs className="text-yellow-500" />,
-      <FaHtml5 className="text-orange-600" />,
-      <FaCss3 className="text-blue-600" />,
-    ],
-    codeLink: "https://github.com/DiegoCM1/TODOList",
-    demoLink: "https://diegocm1.github.io/TODOList/",
   },
 ];
 
