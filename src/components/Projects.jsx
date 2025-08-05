@@ -91,7 +91,7 @@ const projects = [
       <SiOllama className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/ai-blueye",
-    docsLink: "https://github.com/DiegoCM1/MetaQuetzal",
+    docsLink: "https://github.com/DiegoCM1/ai-blueye?tab=readme-ov-file#-blueye-ai-assistant",
   },
   {
     title: "BluEye - Official Landing Page",
@@ -123,7 +123,7 @@ const projects = [
       <SiOllama className="text-white" />,
     ],
     codeLink: "https://github.com/DiegoCM1/portfolio-ai-assistant",
-    demoLink: "https://yourportfolio.vercel.app/",
+    docsLink: "https://github.com/DiegoCM1/portfolio-ai-assistant?tab=readme-ov-file#-portfolio-ai-assistant--backend",
   },
   {
     title: "Alva – AI Assistant for sleeping and waking up (Landing Page)",
