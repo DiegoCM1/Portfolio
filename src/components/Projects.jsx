@@ -32,6 +32,31 @@ import alvaMobileImage from "../assets/images/alvaMobileImage.webp";
 import verskodLanding from "../assets/images/verskod-landing.webp";
 import verskodLandingPc from "../assets/images/verskod-landing-pc.webp";
 
+// Helper component to render images or videos
+const Media = ({ src, alt, onClick }) =>
+  src.endsWith(".mp4") ? (
+    <video
+      loading="lazy"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+      onClick={onClick}
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  ) : (
+    <img
+      loading="lazy"
+      src={src}
+      alt={alt}
+      className="w-full h-full object-cover"
+      onClick={onClick}
+    />
+  );
+
 // Array of project details
 const projects = [
   {
@@ -39,7 +64,7 @@ const projects = [
     description:
       "Winner of Meta’s Llama Impact Hackathon, BluEye is a mobile AI-powered hurricane assistant. It delivers real-time, location-based guidance using Llama AI models and weather APIs. Features include multimodal online and text-only offline AI models, dynamic map and personalized alerts when a hurricane is near. Built with React Native on top of Expo, used NativeWind for styling, OpenRouter for LLM integration, Python and FastAPI for the backend",
     imageUrl: BluEyeMapPc,
-    imageUrl2: bluEyeInterface,
+    mobileImages: [bluEyeInterface],
     technologies: [
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-500" />,
@@ -58,7 +83,7 @@ const projects = [
     description:
       "Official landing page for BluEye, designed to communicate its AI-powered hurricane prevention mission with clarity and impact. Built with Next.js, Tailwind CSS, and TypeScript, the site features responsive layouts, optimized performance, and a modern UI. Hosted on Vercel, it supports real-time product storytelling and reinforces BluEye’s recognition as a Meta Hackathon-winning project.",
     imageUrl: BluEyePC,
-    imageUrl2: bluEyeLandingMobile,
+    mobileImages: [bluEyeLandingMobile],
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
@@ -74,7 +99,7 @@ const projects = [
     description:
       "A full-stack AI-powered assistant built to answer questions about my background, projects, and skills. The project demonstrates backend integration with LLM APIs using FastAPI, OpenRouter, and dynamic prompt handling.",
     imageUrl: AiWorking,
-    imageUrl2: idleAIAssistant,
+    mobileImages: [idleAIAssistant],
     technologies: [
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-300" />,
@@ -90,7 +115,7 @@ const projects = [
     description:
       "Modern and responsive landing page for Alva, a conversational alarm app. Built to introduce the product, capture early user interest, and encourage waitlist sign-ups.",
     imageUrl: alvaDesktopImage,
-    imageUrl2: alvaMobileImage,
+    mobileImages: [alvaMobileImage],
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
@@ -106,7 +131,7 @@ const projects = [
     description:
       "Modern and responsive landing page for Verskod, my tech-driven startup focused on AI education and innovation. Designed to showcase the brand's mission, present its vision, and invite users to join the community as early supporters of its upcoming tools and initiatives.",
     imageUrl: verskodLandingPc,
-    imageUrl2: verskodLanding,
+    mobileImages: [verskodLanding],
     technologies: [
       <FaReact className="text-blue-600" />,
       <SiTailwindcss className="text-teal-400" />,
@@ -122,7 +147,7 @@ const projects = [
     description:
       "Simple and efficient task manager to help you stay organized and at the same time keep track of your goals.",
     imageUrl: pcTodoImage,
-    imageUrl2: phoneTodoImage,
+    mobileImages: [phoneTodoImage],
     technologies: [
       <FaJs className="text-yellow-500" />,
       <FaHtml5 className="text-orange-600" />,
@@ -157,67 +182,58 @@ const Projects = () => {
             key={index}
             className="bg-primaryDarkBlue dark:bg-dark-background border border-buttonBlue/40 rounded-xl p-5 text-textWhite dark:text-dark-textPrimary shadow-md"
           >
-            {/* Check if the project has a secondary image */}
-            {project.imageUrl2 ? (
-              <div className="flex flex-row items-center gap-4">
-                {/* Main image */}
-                <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
-                  {project.imageUrl.endsWith(".mp4") ? (
-                    <video
-                      loading="lazy"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                      onClick={() => setModalImage(project.imageUrl)}
-                    >
-                      <source src={project.imageUrl} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <img
-                      loading="lazy"
+            {/* Check if the project has secondary images */}
+            {project.mobileImages && project.mobileImages.length > 0 ? (
+              project.mobileImages.length === 1 ? (
+                <div className="flex flex-row items-center gap-4">
+                  {/* Main image */}
+                  <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
+                    <Media
                       src={project.imageUrl}
                       alt={project.title}
-                      className="w-full h-full object-cover"
                       onClick={() => setModalImage(project.imageUrl)}
                     />
-                  )}
-                </div>
-                {/* Secondary image */}
-                <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
-                  {project.imageUrl2.endsWith(".mp4") ? (
-                    <video
-                      loading="lazy"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                      onClick={() => setModalImage(project.imageUrl2)}
-                    >
-                      <source src={project.imageUrl2} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <img
-                      loading="lazy"
-                      src={project.imageUrl2}
-                      alt={`${project.title} Secondary`}
-                      className="w-full h-full object-cover"
-                      onClick={() => setModalImage(project.imageUrl2)}
+                  </div>
+                  {/* Single mobile image */}
+                  <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
+                    <Media
+                      src={project.mobileImages[0]}
+                      alt={`${project.title} mobile`}
+                      onClick={() => setModalImage(project.mobileImages[0])}
                     />
-                  )}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="flex flex-row gap-4 items-stretch">
+                  {/* Main image */}
+                  <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
+                    <Media
+                      src={project.imageUrl}
+                      alt={project.title}
+                      onClick={() => setModalImage(project.imageUrl)}
+                    />
+                  </div>
+                  {/* Multiple mobile images */}
+                  <div className="w-3/12 flex flex-col gap-4 h-full">
+                    {project.mobileImages.slice(0, 3).map((img, idx) => (
+                      <div key={idx} className="flex-1 overflow-hidden rounded-lg">
+                        <Media
+                          src={img}
+                          alt={`${project.title} mobile ${idx + 1}`}
+                          onClick={() => setModalImage(img)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
             ) : (
               // If no secondary image, just show the main image
               <div className="w-full aspect-video overflow-hidden rounded-lg">
-                <img
+                <Media
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  onClick={() => setModalImage(project.imageUrl)}
                 />
               </div>
             )}
