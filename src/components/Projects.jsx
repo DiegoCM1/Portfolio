@@ -22,7 +22,9 @@ import {
 import OpenRouterIcon from "./icons/OpenRouterIcon";
 import BluEyePC from "../assets/images/pcBluEyeLanding.webp";
 import BluEyeMapPc from "../assets/images/pcBluEyeMap.webp";
-import bluEyeInterface from "../assets/videos/bluEyeInterface.mp4";
+import BluEyeLogo from "../assets/images/blueye-logo.webp";
+import BluEyeChatbot from "../assets/videos/blueye-chatbot.mp4";
+import BluEyeMVP from "../assets/videos/blueye-mvp.mp4";
 import bluEyeLandingMobile from "../assets/images/bluEyeMobile.webp";
 import AiWorking from "../assets/videos/ai-portfolio-working.mp4";
 import idleAIAssistant from "../assets/images/idle-ai-portfolio.webp";
@@ -62,8 +64,8 @@ const projects = [
     title: "BluEye MVP - Mobile (APK)",
     description:
       "Developed as the core deliverable of our $100,000-winning project in Meta’s Llama Impact Hackathon, BluEye is an AI-powered hurricane assistant built for mobile. This React Native app delivers real-time, location-based alerts and preparedness guidance through an intuitive, multimodal interface. Designed with NativeWind and Tailwind CSS for a seamless user experience, it connects to a powerful AI backend for personalized, life-saving recommendations — all supported by Meta’s Llama ecosystem and grant program.",
-    imageUrl: bluEyeInterface,
-    mobileImages: [bluEyeInterface],
+    imageUrl: BluEyeLogo,
+    mobileImages: [BluEyeMVP],
 
     technologies: [
       <FaReact className="text-blue-600" />,
@@ -80,7 +82,7 @@ const projects = [
     description:
       "BluEye’s AI backend powers the app’s (MVP - APK) intelligent, multimodal response system using cutting-edge Llama AI models. Engineered with Python and FastAPI, it handles real-time weather analysis, provides offline-capable text-only AI models, and seamlessly integrates with OpenRouter and Ollama for robust AI performance. Deployed on Railway for scalable, reliable backend service.",
     imageUrl: BluEyeMapPc,
-    mobileImages: [bluEyeInterface],
+    mobileImages: [BluEyeChatbot],
     technologies: [
       <FaPython className="text-blue-500" />,
       <SiFastapi className="text-green-500" />,
@@ -157,35 +159,38 @@ const projects = [
   },
 ];
 
-// Projects component displaying project cards
+// -----------------------------------------------------------------------------
+// Main <Projects /> component
+// -----------------------------------------------------------------------------
 const Projects = () => {
-  const [modalImage, setModalImage] = useState(null); // Allows to click on images
+  // modalImage holds the src (string) of the image/video clicked by the user.
+  // When set, a full-screen modal appears.  Clicking the modal clears state.
+  const [modalImage, setModalImage] = useState(null);
 
   return (
-    // Section for displaying work/projects
     <section
       id="projects"
       className="px-6 sm:px-10 lg:px-28 py-10 bg-primaryDarkBlue dark:bg-dark-surface text-textWhite dark:text-dark-textPrimary"
     >
-      {/* Section title */}
+      {/* Section heading */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
         My Projects
         <span className="text-buttonBlue dark:text-dark-accent">.</span>
       </h2>
 
-      {/* Grid layout for project cards */}
+      {/* ---------- Card Grid ---------- */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Mapping through the projects array to render each project */}
         {projects.map((project, index) => (
           <div
             key={index}
             className="bg-primaryDarkBlue dark:bg-dark-background border border-buttonBlue/40 rounded-xl p-5 text-textWhite dark:text-dark-textPrimary shadow-md"
           >
-            {/* Check if the project has secondary images */}
-            {project.mobileImages && project.mobileImages.length > 0 ? (
+            {/* ---------- MEDIA PREVIEW ---------- */}
+            {project.mobileImages?.length ? (
               project.mobileImages.length === 1 ? (
+                /* Layout: desktop preview (wide) + single mobile preview */
                 <div className="flex flex-row items-center gap-4">
-                  {/* Main image */}
+                  {/* Desktop-style media (8/12 width) */}
                   <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
                     <Media
                       src={project.imageUrl}
@@ -193,7 +198,7 @@ const Projects = () => {
                       onClick={() => setModalImage(project.imageUrl)}
                     />
                   </div>
-                  {/* Single mobile image */}
+                  {/* Mobile-style media (3/12 width) */}
                   <div className="w-3/12 aspect-[3/4] overflow-hidden rounded-lg">
                     <Media
                       src={project.mobileImages[0]}
@@ -203,8 +208,8 @@ const Projects = () => {
                   </div>
                 </div>
               ) : (
+                /* Layout: desktop preview + vertical stack of multiple mobiles */
                 <div className="flex flex-row gap-4 items-stretch">
-                  {/* Main image */}
                   <div className="w-8/12 aspect-video overflow-hidden rounded-lg">
                     <Media
                       src={project.imageUrl}
@@ -212,7 +217,7 @@ const Projects = () => {
                       onClick={() => setModalImage(project.imageUrl)}
                     />
                   </div>
-                  {/* Multiple mobile images */}
+                  {/* Show up to 3 mobile previews */}
                   <div className="w-3/12 flex flex-col gap-4 h-full">
                     {project.mobileImages.slice(0, 3).map((img, idx) => (
                       <div key={idx} className="flex-1 overflow-hidden rounded-lg">
@@ -227,7 +232,7 @@ const Projects = () => {
                 </div>
               )
             ) : (
-              // If no secondary image, just show the main image
+              /* Fallback: only a single desktop preview */
               <div className="w-full aspect-video overflow-hidden rounded-lg">
                 <Media
                   src={project.imageUrl}
@@ -237,17 +242,14 @@ const Projects = () => {
               </div>
             )}
 
-            {/* Project title */}
-            <h3 className="text-lg sm:text-xl font-bold mt-4 ">
-              {project.title}
-            </h3>
+            {/* ---------- CARD BODY ---------- */}
+            <h3 className="text-lg sm:text-xl font-bold mt-4">{project.title}</h3>
 
-            {/* Project description */}
             <p className="mt-2 text-sm sm:text-base text-buttonBlue dark:text-dark-accent">
               {project.description}
             </p>
 
-            {/* Display project technologies as icons/text */}
+            {/* Technology icons */}
             <div className="flex flex-wrap gap-2 mt-2">
               {project.technologies.map((tech, techIndex) => (
                 <span key={techIndex} className="text-xl sm:text-2xl">
@@ -256,9 +258,8 @@ const Projects = () => {
               ))}
             </div>
 
-            {/* Links to project code and live demo or docs*/}
+            {/* Action buttons */}
             <div className="mt-4 flex space-x-4 flex-wrap">
-              {/* GitHub Code Link */}
               {project.codeLink && (
                 <a
                   href={project.codeLink}
@@ -270,7 +271,6 @@ const Projects = () => {
                 </a>
               )}
 
-              {/* Live Demo Link */}
               {project.demoLink && (
                 <a
                   href={project.demoLink}
@@ -281,7 +281,7 @@ const Projects = () => {
                   Demo <FaLink className="ml-2" />
                 </a>
               )}
-              {/* Docs Link */}
+
               {project.docsLink && (
                 <a
                   href={project.docsLink}
@@ -297,13 +297,12 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Modal for displaying clicked images/videos */}
+      {/* ---------- FULL-SCREEN MODAL ---------- */}
       {modalImage && (
         <div
           onClick={() => setModalImage(null)}
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
         >
-          {/********  decide what to show  ********/}
           {modalImage.endsWith(".mp4") ? (
             <video
               src={modalImage}
@@ -311,6 +310,7 @@ const Projects = () => {
               autoPlay
               loop
               muted
+              controls // remove controls for a cleaner look
             />
           ) : (
             <img
