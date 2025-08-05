@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 import OpenRouterIcon from "./icons/OpenRouterIcon";
 import BluEyePC from "../assets/images/pcBluEyeLanding.webp";
-import BluEyeMapPc from "../assets/images/pcBluEyeMap.webp";
+import BluEyeDocs from "../assets/images/blueye-docs.webp";
 import BluEyeLogo from "../assets/images/blueye-logo.webp";
 import BluEyeChatbot from "../assets/videos/blueye-chatbot.mp4";
 import BluEyeMVP from "../assets/videos/blueye-mvp.mp4";
@@ -81,7 +81,7 @@ const projects = [
     title: "BluEye - AI",
     description:
       "BluEye’s AI backend powers the app’s (MVP - APK) intelligent, multimodal response system using cutting-edge Llama AI models. Engineered with Python and FastAPI, it handles real-time weather analysis, provides offline-capable text-only AI models, and seamlessly integrates with OpenRouter and Ollama for robust AI performance. Deployed on Railway for scalable, reliable backend service.",
-    imageUrl: BluEyeMapPc,
+    imageUrl: BluEyeDocs,
     mobileImages: [BluEyeChatbot],
     technologies: [
       <FaPython className="text-blue-500" />,
