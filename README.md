@@ -59,6 +59,3 @@ JSON-LD, `llms.txt`, and OG image all stay in sync.
 - `src/app/sitemap.ts` — sitemap
 - `src/app/opengraph-image.tsx` — dynamic 1200×630 social card from profile data
 
-## Out of scope (v2)
-
-"Chat with my portfolio" RAG agent, data-generated PDF. See `PLAN.md` §10–11.
