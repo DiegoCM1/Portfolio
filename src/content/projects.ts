@@ -1,10 +1,8 @@
 import { defineContent, projectSchema } from "@/lib/schemas";
 
 /**
- * Curated, featured projects. These are the "weight" of the portfolio.
- * GitHub repos are auto-pulled separately (lib/github.ts) into a secondary
- * grid; a project's optional `repo` field lets a curated entry enrich its
- * live GitHub data instead of duplicating it.
+ * Curated projects — the "weight" of the portfolio, rendered in priority order.
+ * (`repo` is an optional pointer to the source repo, kept for reference.)
  */
 const raw = [
   {
@@ -12,7 +10,7 @@ const raw = [
     title: "BluAI — AI Hurricane Resilience Platform",
     summary: "$100K Meta Llama Impact Grant winner. Hybrid cloud/edge AI hurricane assistant.",
     description:
-      "BluAI is an AI-powered hurricane resilience platform and the core deliverable of our $100K Meta Llama Impact Grant. It pairs a Llama 3.3 cloud brain (RAG + tool-calling) with quantized Llama edge models that run fully offline during connectivity blackouts. Built in React Native + FastAPI with map-based risk visualization and personalized, location-aware disaster alerts. Currently in Google Play closed testing.",
+      "BluAI is an AI-powered hurricane resilience platform and the core deliverable of our $100K Meta Llama Impact Grant. It pairs a Llama 3.3 cloud brain (RAG + tool-calling) with quantized Llama edge models that run fully offline during connectivity blackouts. Built in React Native + FastAPI with map-based risk visualization and personalized, location-aware disaster alerts. Launching to production on Google Play in May 2026, with iOS in active development.",
     tech: ["react-native", "fastapi", "python", "llama", "rag", "railway", "expo"],
     cover: { src: "/media/pcBluEyeMap.webp", alt: "BluAI hurricane risk map interface", type: "image" },
     gallery: [
@@ -51,6 +49,17 @@ const raw = [
     order: 3,
   },
   {
+    slug: "harris-and-frank",
+    title: "Harris & Frank — AI Suit Visualizer",
+    summary: "Photorealistic suit previews generated from raw fabric textures — no photoshoot needed.",
+    description:
+      "A production web app for sales teams that generates photorealistic suit previews from raw fabric textures, replacing physical photoshoots. I fine-tuned custom SDXL + LoRA models on RunPod, with a full-stack architecture in Next.js + FastAPI + Cloudflare R2. (Client project — internals private.)",
+    tech: ["python", "fastapi", "nextjs", "lora", "pytorch", "runpod", "cloudflare"],
+    links: [],
+    featured: true,
+    order: 4,
+  },
+  {
     slug: "bluai-landing",
     title: "BluAI — Official Landing Page",
     summary: "Marketing site for the award-winning hurricane platform.",
@@ -64,7 +73,7 @@ const raw = [
       { label: "Live", href: "https://blueye-landing.vercel.app/", kind: "demo" },
     ],
     repo: "blueye-landing",
-    order: 4,
+    order: 5,
   },
   {
     slug: "portfolio-ai-assistant",
@@ -84,7 +93,7 @@ const raw = [
       },
     ],
     repo: "portfolio-ai-assistant",
-    order: 5,
+    order: 6,
   },
   {
     slug: "alva",
@@ -100,7 +109,7 @@ const raw = [
       { label: "Live", href: "https://alvaassistant.vercel.app/", kind: "demo" },
     ],
     repo: "Alva",
-    order: 6,
+    order: 7,
   },
   {
     slug: "verskod-landing",
@@ -116,7 +125,7 @@ const raw = [
       { label: "Live", href: "https://verskod-landing.vercel.app/", kind: "demo" },
     ],
     repo: "verskod-landing",
-    order: 7,
+    order: 8,
   },
 ];
 

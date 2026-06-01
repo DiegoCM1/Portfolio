@@ -30,7 +30,7 @@ for **BluAI**. (NOTE: it is a *Grant*, never a "hackathon" — fix this wording 
 
 ## 3. Tech stack (2026 standard)
 
-- **Next.js 15 (App Router) + React 19** — SSR/SSG fixes crawler + link-preview blindness; ISR powers GitHub auto-pull.
+- **Next.js 16 (App Router) + React 19** — SSR/SSG fixes crawler + link-preview blindness; ISR powers GitHub auto-pull. (Scaffold pinned the current major, 16, not 15.)
 - **TypeScript** — everywhere. Typed content is the backbone of self-updating + machine-readability.
 - **Tailwind CSS v4** — current major, CSS-first config.
 - **shadcn/ui** — selective (Button/Card/Dialog only). We own the code.
@@ -138,3 +138,21 @@ file in `public/cv` for v1. (Stretch, deferred: generate PDF from data via `@rea
 - "Chat with my portfolio" RAG agent (build on existing Railway FastAPI assistant).
 - PDF generated from data.
 - LinkedIn/X auto-sync (no good public API — not worth it).
+
+## 11. Build log — deviations from the plan (v1 shipped)
+
+- **Next.js 16.2** (not 15) — current major at scaffold time. React 19.2, Tailwind v4.3, TypeScript 5.9.
+- **shadcn/ui skipped** — hand-rolled lightweight primitives (`Section`, `TechBadge`, `Media`, `Reveal`) instead. Less tooling/config for a handful of components; still "own the code."
+- **tsParticles pinned to v3** — v4 replaced `initParticlesEngine` with an unstable Provider API; v3 is the proven, documented version.
+- **Dark-only theme** — dropped the light/dark toggle for v1 to keep the surface lean (brief emphasizes the dark AI look).
+- **Contact = direct links** (mailto + LinkedIn + GitHub). EmailJS form deferred so we don't ship a contact path that silently fails without configured keys.
+- **Icons:** lucide-react for UI chrome (it dropped brand icons in v1.x), `react-icons/si` + `/fa6` for tech/brand logos.
+- **pnpm 11.5 build gate:** native build scripts (`sharp`, `unrs-resolver`, `@tsparticles/engine`) approved via `pnpm approve-builds --all` (config keys in `pnpm-workspace.yaml` / `package.json` are no longer honored).
+- **GitHub auto-pull removed (post-review):** the "More on GitHub" ISR grid was cut — the curated Projects section already carries the narrative, and a raw repo list risked diluting it. The GitHub profile is still linked in the navbar/contact/footer. `/` is now fully static. Self-updating comes purely from `src/content`.
+
+### Status: v1 builds green, type-checks, lints clean. SSR content, JSON-LD, /llms.txt, /robots.txt (AI-crawler-friendly), /sitemap.xml, and dynamic /opengraph-image all verified.
+
+### Remaining before launch
+- Visual QA in a real browser (mobile + desktop); tune spacing/animation to taste.
+- Point Vercel project at this branch; verify OG preview renders in a DM.
+- Decide BluAI vs "MetaQuetzal" repo naming shown on cards.
