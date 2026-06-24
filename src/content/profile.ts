@@ -18,7 +18,9 @@ export const profile = defineContent(profileSchema, {
     alt: "Portrait of Luis Diego Colín Mendiola",
     type: "image",
   },
-  resumeUrl: "/cv/Luis-Diego-Colin-CV.pdf",
+  // Stable local path; the /resume route decides where it actually resolves
+  // (live Google Drive file when CV_DRIVE_FILE_ID is set, bundled PDF otherwise).
+  resumeUrl: "/resume",
   socials: {
     github: "https://github.com/DiegoCM1",
     githubUser: "DiegoCM1",
